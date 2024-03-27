@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     // <div className={`md:fixed  top-0 w-full shadow-lg shadow-indigo-500/10 ${isCrolled ? "bg-white" : ""}`}>
-    <div className={`md  top-0 w-full shadow-lg shadow-indigo-500/10 bg-emerald-50	 ${isCrolled ? "bg-white" : ""}`}>
+    <div className={`md  top-0 w-full shadow-lg shadow-indigo-500/10 bg-white	 ${isCrolled ? "bg-white" : ""}`}>
       {/* bg-blue-950 */}
       <div className=" p-4 md:px-4  w-full">
           <div className="flex md:flex md:justify-between items-center md:mx-10 md:mr-28 ">
