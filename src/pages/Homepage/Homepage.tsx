@@ -1,4 +1,5 @@
 import Navbar from '../../component/navbar/Navbar'
+import Newproduct from '../../component/NewProduct/Newproduct'
 // import Footer from '../../component/Footer/Footer'
 // import Searchbar from './Searchbar'
 // import banner3 from "../../assets/images/banner3.jpg"
@@ -29,9 +30,9 @@ const Homepage = () => {
             
                     <section className="home relative text-white">
                               <div className="content flex flex-col md:flex-row">
-                                <div className="left md:w-2/5  w-5/6 md:p-8 p-4 md:mt-40 ">
+                                <div className="left md:w-2/5  w-5/6 md:p-8 p-4 md:pl-40 md:mt-40 ">
 
-                                    <h2 className="md:text-5xl  mb-8 ">Cửa Hàng Xe Máy - Xe Điện</h2>
+                                    <h2 className="md:text-4xl  mb-8 ">Cửa Hàng Xe Máy - Xe Điện</h2>
                                     <h1 className='md:text-8xl text-5xl mb-8 font-bold text-center md:text-left'>HIỆP LỢI</h1>
                                     {/* <p className="text-white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
                                     <div>
@@ -76,6 +77,7 @@ const Homepage = () => {
                               </div>
 
                   </section>
+                  <div><Newproduct/></div>
            
         </div>
 
