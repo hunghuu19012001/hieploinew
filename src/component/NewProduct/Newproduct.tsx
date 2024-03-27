@@ -1,3 +1,4 @@
+import airblade from "../../assets/images/xe/air blade.png"
 
 const Newproduct = () => {
   return (
@@ -16,7 +17,7 @@ const Newproduct = () => {
                 <div className="content md:grid md:grid-rows-2  top flex flex-col">
                     <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer">
                         <div className="img relative flex justify-center">
-                            <img src="src\assets\images\xe\air blade.png" alt="" />
+                            <img src={airblade} alt="" />
                             <div className="flex1">
                                 <i className="fas fa-heart "></i>
                             </div>
@@ -31,7 +32,7 @@ const Newproduct = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="src\assets\images\xe\air blade.png" alt="" />
+                            <img src={airblade} alt="" />
                             <div className="flex1">
                                 <label>50%</label>
                                 <i className="fas fa-heart"></i>
@@ -47,7 +48,7 @@ const Newproduct = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="src\assets\images\xe\air blade.png" alt="" />
+                            <img src={airblade} alt="" />
                             <div className="flex1">
                                 <label>50%</label>
                                 <i className="fas fa-heart"></i>
@@ -63,7 +64,7 @@ const Newproduct = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="src\assets\images\xe\air blade.png" alt="" />
+                            <img src={airblade} alt="" />
                             <div className="flex1">
                                 <label>50%</label>
                                 <i className="fas fa-heart"></i>
@@ -79,7 +80,7 @@ const Newproduct = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="src\assets\images\xe\air blade.png" alt="" />
+                            <img src={airblade} alt="" />
                             <div className="flex1">
                                 <label>50%</label>
                                 <i className="fas fa-heart"></i>
@@ -95,7 +96,7 @@ const Newproduct = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src="src\assets\images\xe\air blade.png" alt="" />
+                            <img src={airblade} alt="" />
                             <div className="flex1">
                                 <label>50%</label>
                                 <i className="fas fa-heart"></i>
