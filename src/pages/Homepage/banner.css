@@ -1,0 +1,18 @@
+/* .bannerbg {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100%;
+    z-index: -1;
+} */
+
+@media only screen and (max-width:768px) {
+    .bannerbg {
+        background-size: cover;
+        height: 70vh;
+        width: 100%;
+    }
+}
