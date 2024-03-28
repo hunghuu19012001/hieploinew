@@ -1,10 +1,12 @@
 import airblade from "../../assets/images/xe/air blade.png"
-
+import "../NewProduct/Newproduct.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 const Newproduct = () => {
   return (
     <div>
         <section className="latest top">
-            <div className="scontainer text-center ">
+            <div className="scontainer text-center w-4/5 m-auto">
                 <div className="heading">
                     <h1>Latest Popular Bike</h1>
                     <div className="lines flex1">
@@ -14,100 +16,101 @@ const Newproduct = () => {
                     </div>
                 </div>
 
-                <div className="content md:grid md:grid-rows-2  top flex flex-col">
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer">
+                <div className="content md:grid md:grid-rows-2 gap-7 top flex flex-col">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
-                            <div className="flex1">
-                                <i className="fas fa-heart "></i>
+                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
+                                <label className="w-12 h-12  rounded-full text-white bg-green-600 text-center">50%</label>
+                                <FontAwesomeIcon icon={faHeart} className="text-xl"/>
                             </div>
                         </div>
 
                         <div className="detalis ">
-                            <h3>Aerion Carrbo Helmet</h3>
-                            <p>(Fashion , Twin Disc)</p>
-                            <h2 className="font-normal text-green-600 mx-0 my-5">$699 <span>$799</span> </h2>
-                            <button className="m-0 mt-5">Buy Now</button>
+                            <h3 className="font-semibold text-xl">Air Blade</h3>
+                            <p>(Bản tiêu chuẩn)</p>
+                            <h2 className="font-normal text-lg text-green-600 mx-0 my-5"> <span>Khoảng $2000</span> </h2>
+                            <button className="text-sm">Mua Ngay</button>
                         </div>
                     </div>
-                    <div className="box">
-                        <div className="img">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                        <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
-                            <div className="flex1">
-                                <label>50%</label>
-                                <i className="fas fa-heart"></i>
+                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
+                                <label className="w-12 h-12  rounded-full text-white bg-green-600 text-center">50%</label>
+                                <FontAwesomeIcon icon={faHeart} className="text-xl"/>
                             </div>
                         </div>
 
-                        <div className="detalis">
-                            <h3>Aerion Carrbo Helmet</h3>
-                            <p>(Fashion , Twin Disc)</p>
-                            <h2>$699 <span>$799</span> </h2>
-                            <button>Buy Now</button>
+                        <div className="detalis ">
+                            <h3 className="font-semibold text-xl">Air Blade</h3>
+                            <p>(Bản tiêu chuẩn)</p>
+                            <h2 className="font-normal text-lg text-green-600 mx-0 my-5"> <span>Khoảng $2000</span> </h2>
+                            <button className="text-sm">Mua Ngay</button>
                         </div>
                     </div>
-                    <div className="box">
-                        <div className="img">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                        <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
-                            <div className="flex1">
-                                <label>50%</label>
-                                <i className="fas fa-heart"></i>
+                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
+                                <label className="w-12 h-12  rounded-full text-white bg-green-600 text-center">50%</label>
+                                <FontAwesomeIcon icon={faHeart} className="text-xl"/>
                             </div>
                         </div>
 
-                        <div className="detalis">
-                            <h3>Aerion Carrbo Helmet</h3>
-                            <p>(Fashion , Twin Disc)</p>
-                            <h2>$699 <span>$799</span> </h2>
-                            <button>Buy Now</button>
+                        <div className="detalis ">
+                            <h3 className="font-semibold text-xl">Air Blade</h3>
+                            <p>(Bản tiêu chuẩn)</p>
+                            <h2 className="font-normal text-lg text-green-600 mx-0 my-5"> <span>Khoảng $2000</span> </h2>
+                            <button className="text-sm">Mua Ngay</button>
                         </div>
                     </div>
-                    <div className="box">
-                        <div className="img">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                        <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
-                            <div className="flex1">
-                                <label>50%</label>
-                                <i className="fas fa-heart"></i>
+                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
+                                <label className="w-12 h-12  rounded-full text-white bg-green-600 text-center">50%</label>
+                                <FontAwesomeIcon icon={faHeart} className="text-xl"/>
                             </div>
                         </div>
 
-                        <div className="detalis">
-                            <h3>Aerion Carrbo Helmet</h3>
-                            <p>(Fashion , Twin Disc)</p>
-                            <h2>$699 <span>$799</span> </h2>
-                            <button>Buy Now</button>
+                        <div className="detalis ">
+                            <h3 className="font-semibold text-xl">Air Blade</h3>
+                            <p>(Bản tiêu chuẩn)</p>
+                            <h2 className="font-normal text-lg text-green-600 mx-0 my-5"> <span>Khoảng $2000</span> </h2>
+                            <button className="text-sm">Mua Ngay</button>
                         </div>
                     </div>
-                    <div className="box">
-                        <div className="img">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                        <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
-                            <div className="flex1">
-                                <label>50%</label>
-                                <i className="fas fa-heart"></i>
+                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
+                                <label className="w-12 h-12  rounded-full text-white bg-green-600 text-center">50%</label>
+                                <FontAwesomeIcon icon={faHeart} className="text-xl"/>
                             </div>
                         </div>
 
-                        <div className="detalis">
-                            <h3>Aerion Carrbo Helmet</h3>
-                            <p>(Fashion , Twin Disc)</p>
-                            <h2>$699 <span>$799</span> </h2>
-                            <button>Buy Now</button>
+                        <div className="detalis ">
+                            <h3 className="font-semibold text-xl">Air Blade</h3>
+                            <p>(Bản tiêu chuẩn)</p>
+                            <h2 className="font-normal text-lg text-green-600 mx-0 my-5"> <span>Khoảng $2000</span> </h2>
+                            <button className="text-sm">Mua Ngay</button>
                         </div>
                     </div>
-                    <div className="box">
-                        <div className="img">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                        <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
-                            <div className="flex1">
-                                <label>50%</label>
-                                <i className="fas fa-heart"></i>
+                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
+                                <label className="w-12 h-12  rounded-full text-white bg-green-600 text-center">50%</label>
+                                <FontAwesomeIcon icon={faHeart} className="text-xl"/>
                             </div>
                         </div>
 
-                        <div className="detalis">
-                            <h3>Aerion Carrbo Helmet</h3>
-                            <p>(Fashion , Twin Disc)</p>
-                            <h2>$699 <span>$799</span> </h2>
-                            <button>Buy Now</button>
+                        <div className="detalis ">
+                            <h3 className="font-semibold text-xl">Air Blade</h3>
+                            <p>(Bản tiêu chuẩn)</p>
+                            <h2 className="font-normal text-lg text-green-600 mx-0 my-5"> <span>Khoảng $2000</span> </h2>
+                            <button className="text-sm">Mua Ngay</button>
                         </div>
                     </div>
                 </div>
