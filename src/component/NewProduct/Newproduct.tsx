@@ -10,8 +10,8 @@ import honda from "../../assets/images/icons/honda.png"
 import yamaha from "../../assets/images/icons/yamaha.png"
 
 import "../NewProduct/Newproduct.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faHeart } from '@fortawesome/free-solid-svg-icons'
 const Newproduct = () => {
   return (
     <div>
