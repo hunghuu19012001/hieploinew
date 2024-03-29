@@ -34,7 +34,7 @@ const Newproduct = () => {
                         <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
                             <div className="flex1 flex justify-between items-center text-green-600 absolute top-0 w-full">
-                                <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label>
+                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 {/* <FontAwesomeIcon icon={faHeart} className="text-xl"/> */}
                                 <img className="text-xl" src={honda} alt="" />
                             </div>
@@ -81,7 +81,7 @@ const Newproduct = () => {
                         <div className="img relative flex justify-center">
                             <img src={blade} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label>
+                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 <img className="text-xl" src={honda} alt="" />                            
                             </div>
                         </div>
@@ -121,7 +121,7 @@ const Newproduct = () => {
                         <div className="img relative flex justify-center">
                             <img src={future} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label>
+                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 <img className="text-xl" src={honda} alt="" />
                             </div>
                         </div>
@@ -161,7 +161,7 @@ const Newproduct = () => {
                         <div className="img relative flex justify-center">
                             <img src={lead} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label>
+                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 <img className="text-xl" src={honda} alt="" />
                             </div>
                         </div>
@@ -201,7 +201,7 @@ const Newproduct = () => {
                         <div className="img relative flex justify-center">
                             <img src={sh} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label>
+                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 <img className="text-xl" src={honda} alt="" />
                             </div>
                         </div>
@@ -241,7 +241,7 @@ const Newproduct = () => {
                         <div className="img relative flex justify-center">
                             <img src={sh350i} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label>
+                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 <img className="text-xl" src={honda} alt="" />
                             </div>
                         </div>
@@ -281,7 +281,7 @@ const Newproduct = () => {
                         <div className="img relative flex justify-center">
                             <img src={vario} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label>
+                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 <img className="text-xl" src={honda} alt="" />
                             </div>
                         </div>
@@ -321,7 +321,7 @@ const Newproduct = () => {
                         <div className="img relative flex justify-center">
                             <img src={grande} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label>
+                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 {/* <FontAwesomeIcon icon={faHeart} className="text-xl"/> */}
                                 <img className="text-xl" src={yamaha} alt="" />
                             </div>
