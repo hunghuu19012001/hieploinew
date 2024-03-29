@@ -37,7 +37,7 @@ function Navbar() {
                   <BiMenu className="text-green-600 cursor-pointer md:hidden flex-none w-9 h-9 " onClick={toggleNavMenuMobile}></BiMenu>
 
               </div>
-              <div className={`text-white font-extrabold flex items-center space-x-16 hidden md:block  bg-white p-3 rounded-3xl text-lg`}>
+              <div className={`text-white font-semibold flex items-center space-x-16 hidden md:block  bg-white p-3 rounded-3xl text-lg`}>
                     <Link id="home" to="#" >Giới thiệu</Link>
                     <Link id="legalservices" to='#'>Xe máy</Link>
 
