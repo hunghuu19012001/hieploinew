@@ -1,5 +1,9 @@
 import Navbar from '../../component/navbar/Navbar'
 import Newproduct from '../../component/NewProduct/Newproduct'
+import Xehonda from '../Homepage/Xehonda'
+import Xeyamaha from '../Homepage/Xeyamaha'
+import Xekazuki from '../Homepage/Xekazuki'
+import Choosebanner from '../Homepage/Choosebanner'
 // import Footer from '../../component/Footer/Footer'
 // import Searchbar from './Searchbar'
 // import banner3 from "../../assets/images/banner3.jpg"
@@ -19,7 +23,7 @@ const Homepage = () => {
         });
     },[]);
   return (
-    <div>
+    
         <div className='flex flex-col flex-row'>
             <div><Navbar/></div>
 {/* 
@@ -77,14 +81,19 @@ const Homepage = () => {
                               </div>
 
                   </section>
+                  <div><Choosebanner/></div>
                   <div><Newproduct/></div>
-           
+                  <div><Xehonda /></div>
+                  <div><Xeyamaha /></div>
+                  <div><Xekazuki /></div>
+                  
+                
         </div>
 
+        
 
-
-        {/* <div><Footer/></div> */}
-    </div>
+        /* <div><Footer/></div> */
+    
   )
 }
 

@@ -1,26 +1,17 @@
+import honda from "../../assets/images/icons/honda.png"
+// import yamaha from "../../assets/images/icons/yamaha.png"
 import airblade from "../../assets/images/xe/air blade.png"
 import blade from "../../assets/images/xe/blade.png"
 import future from "../../assets/images/xe/future.png"
 import lead from "../../assets/images/xe/lead.png"
-import sh from "../../assets/images/xe/sh.png"
-import sh350i from "../../assets/images/xe/sh350i.png"
-import vario from "../../assets/images/xe/vario.png"
-import grande from "../../assets/images/xe/grande.png"
-import honda from "../../assets/images/icons/honda.png"
-import yamaha from "../../assets/images/icons/yamaha.png"
 import Button from '@mui/material/Button';
 
-// import itemlogo from "../../assets/images/icons/itemlogo.png"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCircle } from '@fortawesome/free-solid-svg-icons';// Import icon vòng tròn
 
-import "../NewProduct/Newproduct.css"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faHeart } from '@fortawesome/free-solid-svg-icons'
-const Newproduct = () => {
+
+const xehonda = () => {
   return (
     <div>
-        <section className="latest top">
+      <section className="latest top">
             <div className="scontainer text-center w-4/5 m-auto md:p-12">
                 <div className="heading text-center relative mb-28">
                     <h1 className="md:text-5xl font-normal text-3xl">SẢN PHẨM MỚI</h1>
@@ -72,12 +63,11 @@ const Newproduct = () => {
                                     <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
                                     <p className="flex justify-center text-lg font-semibold">$2000</p>
                                 </div>
-                  
-                                    <div className="text-right my-auto ">
+                                <div className="text-right my-auto ">
                                         <Button variant="contained" style={{ backgroundColor: '#37B234', color: 'white' }}>
                                             Xem chi tiết
                                         </Button>
-                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -208,181 +198,23 @@ const Newproduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
-                        <div className="img relative flex justify-center">
-                            <img src={sh} alt="" />
-                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
-                                <img className="text-xl" src={honda} alt="" />
-                            </div>
-                        </div>
+                    
+                    
+                    
+                    
 
-                        <div className="detalis ">
-                            <div className="flex">
-                                <h3 className="font-semibold text-xl">SH</h3>
-                            </div>
-
-                            <div className="flex justify-between text-gray-500 mt-3">
-                                <div className="left flex flex-col gap-1 text-left text-xs">
-                                    <p>Phanh: ABS</p>
-                                    <p>D/t bình xăng: 4,4 lít</p>
-                                    <p>Hộp số: Vô cấp</p>
-                                </div>
-
-                                <div className="right flex flex-col gap-1 text-right text-xs">
-                                    <p>M/độ tiêu thụ: 2,3/100km</p>
-                                    <p>Khối lượng: 113kg</p>
-                                    <p>Độ cao yên: 775 mm</p>
-                                </div>
-                            </div>
-
-                            <div className="flex justify-between mt-7">
-                                <div className="text-left ">
-                                    <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
-                                    <p className="flex justify-center text-lg font-semibold">$2000</p>
-                                </div>
-                                <div className="text-right my-auto ">
-                                        <Button variant="contained" style={{ backgroundColor: '#37B234', color: 'white' }}>
-                                            Xem chi tiết
-                                        </Button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
-                        <div className="img relative flex justify-center">
-                            <img src={sh350i} alt="" />
-                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
-                                <img className="text-xl" src={honda} alt="" />
-                            </div>
-                        </div>
-
-                        <div className="detalis ">
-                            <div className="flex">
-                                <h3 className="font-semibold text-xl">SH 350i</h3>
-                            </div>
-
-                            <div className="flex justify-between text-gray-500 mt-3">
-                                <div className="left flex flex-col gap-1 text-left text-xs">
-                                    <p>Phanh: ABS</p>
-                                    <p>D/t bình xăng: 4,4 lít</p>
-                                    <p>Hộp số: Vô cấp</p>
-                                </div>
-
-                                <div className="right flex flex-col gap-1 text-right text-xs">
-                                    <p>M/độ tiêu thụ: 2,3/100km</p>
-                                    <p>Khối lượng: 113kg</p>
-                                    <p>Độ cao yên: 775 mm</p>
-                                </div>
-                            </div>
-
-                            <div className="flex justify-between mt-7">
-                                <div className="text-left ">
-                                    <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
-                                    <p className="flex justify-center text-lg font-semibold">$2000</p>
-                                </div>
-                                <div className="text-right my-auto ">
-                                        <Button variant="contained" style={{ backgroundColor: '#37B234', color: 'white' }}>
-                                            Xem chi tiết
-                                        </Button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
-                        <div className="img relative flex justify-center">
-                            <img src={vario} alt="" />
-                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
-                                <img className="text-xl" src={honda} alt="" />
-                            </div>
-                        </div>
-
-                        <div className="detalis ">
-                            <div className="flex">
-                                <h3 className="font-semibold text-xl">Vario</h3>
-                            </div>
-
-                            <div className="flex justify-between text-gray-500 mt-3">
-                                <div className="left flex flex-col gap-1 text-left text-xs">
-                                    <p>Phanh: ABS</p>
-                                    <p>D/t bình xăng: 4,4 lít</p>
-                                    <p>Hộp số: Vô cấp</p>
-                                </div>
-
-                                <div className="right flex flex-col gap-1 text-right text-xs">
-                                    <p>M/độ tiêu thụ: 2,3/100km</p>
-                                    <p>Khối lượng: 113kg</p>
-                                    <p>Độ cao yên: 775 mm</p>
-                                </div>
-                            </div>
-
-                            <div className="flex justify-between mt-7">
-                                <div className="text-left ">
-                                    <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
-                                    <p className="flex justify-center text-lg font-semibold">$2000</p>
-                                </div>
-                                <div className="text-right my-auto ">
-                                        <Button variant="contained" style={{ backgroundColor: '#37B234', color: 'white' }}>
-                                            Xem chi tiết
-                                        </Button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
-                        <div className="img relative flex justify-center">
-                            <img src={grande} alt="" />
-                            <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
-                                {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
-                                {/* <FontAwesomeIcon icon={faHeart} className="text-xl"/> */}
-                                <img className="text-xl" src={yamaha} alt="" />
-                            </div>
-                        </div>
-
-                        <div className="detalis ">
-                            <div className="flex">
-                                <h3 className="font-semibold text-xl">Grande</h3>
-                            </div>
-
-                            <div className="flex justify-between text-gray-500 mt-3">
-                                <div className="left flex flex-col gap-1 text-left text-xs">
-                                    <p>Phanh: ABS</p>
-                                    <p>D/t bình xăng: 4,4 lít</p>
-                                    <p>Hộp số: Vô cấp</p>
-                                </div>
-
-                                <div className="right flex flex-col gap-1 text-right text-xs">
-                                    <p>M/độ tiêu thụ: 2,3/100km</p>
-                                    <p>Khối lượng: 113kg</p>
-                                    <p>Độ cao yên: 775 mm</p>
-                                </div>
-                            </div>
-
-                            <div className="flex justify-between mt-7">
-                                <div className="text-left ">
-                                    <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
-                                    <p className="flex justify-center text-lg font-semibold">$2000</p>
-                                </div>
-                                <div className="text-right my-auto ">
-                                        <Button variant="contained" style={{ backgroundColor: '#37B234', color: 'white' }}>
-                                            Xem chi tiết
-                                        </Button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                
+                <div className="flex mt-3 mb-10">
+                    <Button variant="contained" style={{ backgroundColor: '#37B234', color: 'white' }}>
+                        XEM TẤT CẢ
+                    </Button>
                 </div>
             </div>
-        </section> 
-
+        </section>
     </div>
   )
 }
 
-export default Newproduct
+export default xehonda
+
