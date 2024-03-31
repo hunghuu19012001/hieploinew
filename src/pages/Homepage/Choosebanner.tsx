@@ -6,19 +6,19 @@ import { Theme } from '@mui/material/styles';
 
 const images = [
   {
-    url: 'src/assets/images/icons/hondabig.png',
-    title: 'Breakfast',
+    url: 'src/assets/hondachoose.jpg',
+    title: 'Bạn muốn mua xe Honda?',
+    width: '35%',
+  },
+  {
+    url: '',
+    title: 'Bạn muốn mua xe Yamaha?',
     width: '30%',
   },
   {
-    url: 'src/assets/images/icons/yamahabig.png',
-    title: 'Burgers',
-    width: '40%',
-  },
-  {
-    url: 'src/assets/images/icons/kazukibig.png',
-    title: 'Camera',
-    width: '30%',
+    url: '',
+    title: 'Bạn muốn mua xe điện?',
+    width: '35%',
   },
 ];
 
@@ -32,7 +32,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   '&:hover, &.Mui-focusVisible': {
     zIndex: 1,
     '& .MuiImageBackdrop-root': {
-      opacity: 0.15,
+      opacity: 0.6,
     },
     '& .MuiImageMarked-root': {
       opacity: 0,
@@ -109,6 +109,12 @@ export default function ButtonBaseDemo() {
                 p: 4,
                 pt: 2,
                 pb: (theme: Theme) => `calc(${theme.spacing(1)} + 6px)`,
+                fontSize: '20px', // Kích thước chữ
+                fontWeight: 'bold', // Độ đậm
+                textTransform: 'uppercase', // Chuyển đổi văn bản thành chữ in hoa
+                textAlign: 'center', // Căn giữa văn bản
+                color: 'white', // Màu chữ
+                zIndex: 10, // Độ sâu của phần tử
               }}
             >
               {image.title}

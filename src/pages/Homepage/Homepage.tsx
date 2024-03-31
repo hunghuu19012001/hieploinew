@@ -4,6 +4,7 @@ import Xehonda from '../Homepage/Xehonda'
 import Xeyamaha from '../Homepage/Xeyamaha'
 import Xekazuki from '../Homepage/Xekazuki'
 import Choosebanner from '../Homepage/Choosebanner'
+import Introhome from '../Homepage/Introhome'
 // import Footer from '../../component/Footer/Footer'
 // import Searchbar from './Searchbar'
 // import banner3 from "../../assets/images/banner3.jpg"
@@ -86,6 +87,8 @@ const Homepage = () => {
                   <div><Xehonda /></div>
                   <div><Xeyamaha /></div>
                   <div><Xekazuki /></div>
+                  <div><Introhome /></div>
+
                   
                 
         </div>
