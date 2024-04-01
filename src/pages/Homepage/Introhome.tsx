@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTools, faMotorcycle, faShieldAlt  } from '@fortawesome/free-solid-svg-icons';
+import { faTools, faScrewdriver, faPhone  } from '@fortawesome/free-solid-svg-icons';
 
 const Introhome = () => {
   return (
@@ -26,7 +26,7 @@ const Introhome = () => {
                 </div>
                 <div className="box md:w-1/3 flex flex-row my-4">
                     <div className="img text-center md:mr-10 p-30 flex items-center justify-center">
-                        <FontAwesomeIcon icon={faMotorcycle} className="text-3xl mx-8 border-2 border-white rounded-full p-3 md:p-10"/> {/* Sửa chữa */}
+                        <FontAwesomeIcon icon={faScrewdriver} className="text-3xl mx-8 border-2 border-white rounded-full p-3 md:p-10"/> {/* Sửa chữa */}
                     </div>
                     <div className="text my-auto">
                         <h3 className="font-normal mb-3">DỊCH VỤ NHANH CHỐNG VÀ HIỆU QUẢ</h3>
@@ -35,7 +35,7 @@ const Introhome = () => {
                 </div>
                 <div className="box md:w-1/3 flex flex-row my-4">
                     <div className="img text-center md:mr-10 p-30 flex items-center justify-center">
-                        <FontAwesomeIcon icon={faShieldAlt} className="text-3xl mx-8 border-2 border-white rounded-full p-3 md:p-10"/> {/* Sửa chữa */}
+                        <FontAwesomeIcon icon={faPhone} className="text-3xl mx-8 border-2 border-white rounded-full p-3 md:p-10"/> {/* Sửa chữa */}
                     </div>
                     <div className="text my-auto">
                         <h3 className="font-normal mb-3">HỖ TRỢ VÀ CHĂM SÓC KHÁCH HÀNG</h3>

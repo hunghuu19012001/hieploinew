@@ -6,7 +6,7 @@ import { Theme } from '@mui/material/styles';
 
 const images = [
   {
-    url: 'src/assets/hondachoose.jpg',
+    url: 'https://cdn.honda.com.vn/motorbikes/January2024/IGn255GstUZEUEvY1UFd.jpg',
     title: 'Bạn muốn mua xe Honda?',
     width: '35%',
   },
