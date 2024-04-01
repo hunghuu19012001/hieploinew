@@ -6,25 +6,25 @@ import { Theme } from '@mui/material/styles';
 
 const images = [
   {
-    url: 'https://cdn.honda.com.vn/motorbikes/January2024/IGn255GstUZEUEvY1UFd.jpg',
+    url: 'https://cdn.honda.com.vn/motorbikes/December2023/Fl5DEjjKFPzsWfKRcAIh.jpg',
     title: 'Bạn muốn mua xe Honda?',
-    width: '35%',
+    width: '33%',
   },
   {
-    url: '',
+    url: 'https://yamaha-motor.com.vn/wp/wp-content/webp-express/webp-images/doc-root/wp/wp-content/uploads/2024/02/Website-Post-Image.jpg.webp',
     title: 'Bạn muốn mua xe Yamaha?',
-    width: '30%',
+    width: '34%',
   },
   {
-    url: '',
+    url: 'https://kazukidtp.vn/wp-content/uploads/2024/01/z5097456631314_8c9a9f0c4d8c6ad64eb1661afcea64c3.jpg',
     title: 'Bạn muốn mua xe điện?',
-    width: '35%',
+    width: '33%',
   },
 ];
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
-  height: 200,
+  height: 400,
   [theme.breakpoints.down('sm')]: {
     width: '100% !important', // Overrides inline-style
     height: 100,
