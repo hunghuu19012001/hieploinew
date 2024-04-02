@@ -263,7 +263,7 @@ function NavList() {
       <Typography
         as="a"
         placeholder=""
-        href=""
+        href="/"
         variant="small"
         color="blue-gray"
         className="font-medium text-xl" ///chinh text
@@ -292,7 +292,7 @@ export function NavbarWithMegaMenu() {
   const [isCrolled, setIsCrolled] = useState(false);
   useEffect ( () => {
     const handleScroll = () => {
-      const scrollThreshold = 100;
+      const scrollThreshold = 20;
       const scrolled = window.scrollY > scrollThreshold;
       setIsCrolled(scrolled);
   };

@@ -1,9 +1,287 @@
 import {NavbarWithMegaMenu} from '../../../component/navbar/NavbarMain'
+import { Carousel } from "@material-tailwind/react";
+import './Hondapage.css'
+import airblade from '../../../assets/images/xehonda/airblade.png'
+
+import lead from '../../../assets/images/xehonda/lead.png'
+import sh125i160i from '../../../assets/images/xehonda/sh125i160i.png'
+import sh350i from '../../../assets/images/xehonda/sh350i.png'
+import shmode from '../../../assets/images/xehonda/shmode.png'
+
+import vario from '../../../assets/images/xehonda/vario.png'
+import vario160 from '../../../assets/images/xehonda/vario160.png'
+import vision from '../../../assets/images/xehonda/vision.jpg'
+import visionphienbancodien from '../../../assets/images/xehonda/visionphienbancodien.png'
+import wavealpha110 from '../../../assets/images/xehonda/wavealpha110.png'
+import wavealphaphienbanrcodien from '../../../assets/images/xehonda/wavealphaphienbancodien.png'
+import waversx from '../../../assets/images/xehonda/waversx.png'
+
+import blade2023 from '../../../assets/images/xehonda/blade2023.png'
+import future from '../../../assets/images/xehonda/future.jpg'
+import supercupc125 from '../../../assets/images/xehonda/supercupc125.png'
+import winnerx2024 from '../../../assets/images/xehonda/winnerx2024.jpg'
+import cbr150r from '../../../assets/images/xehonda/cbr150r.png'
+
+
 const Hondapage = () => {
+  const xega = [
+    {
+      id: 1,
+      name: 'Air Blade',
+      href: '#',
+      price: '$48',
+      imageSrc: airblade,
+      imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    },
+    {
+      id: 2,
+      name: 'Vision phiên bản cổ điển',
+      href: '#',
+      price: '$35',
+      imageSrc: visionphienbancodien,
+      imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    },
+    {
+      id: 3,
+      name: 'SH Mode 125',
+      href: '#',
+      price: '$89',
+      imageSrc: shmode,
+      imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    },
+    {
+      id: 4,
+      name: 'SH 350i',
+      href: '#',
+      price: '$35',
+      imageSrc: sh350i,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+    {
+      id: 5,
+      name: 'SH 125i/160i',
+      href: '#',
+      price: '$35',
+      imageSrc: sh125i160i,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+    {
+      id: 6,
+      name: 'Lead 125',
+      href: '#',
+      price: '$35',
+      imageSrc: lead,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+    {
+      id: 7,
+      name: 'Vision',
+      href: '#',
+      price: '$35',
+      imageSrc: vision,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+    {
+      id: 8,
+      name: 'Vario160',
+      href: '#',
+      price: '$35',
+      imageSrc: vario160,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+    {
+      id: 9,
+      name: 'Vario 125',
+      href: '#',
+      price: '$35',
+      imageSrc: vario,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+
+    // More products...
+  ]
+  const xeso = [
+    {
+      id: 1,
+      name: 'Wave alpha 110',
+      href: '#',
+      price: '$48',
+      imageSrc: wavealpha110,
+      imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    },
+    {
+      id: 2,
+      name: 'Wave alpha phiên bản cổ điển',
+      href: '#',
+      price: '$35',
+      imageSrc: wavealphaphienbanrcodien,
+      imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    },
+    {
+      id: 3,
+      name: 'Wave RSX',
+      href: '#',
+      price: '$89',
+      imageSrc: waversx,
+      imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    },
+    {
+      id: 4,
+      name: 'Blade 2023',
+      href: '#',
+      price: '$35',
+      imageSrc: blade2023,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+    {
+      id: 5,
+      name: 'Future',
+      href: '#',
+      price: '$35',
+      imageSrc: future,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+    {
+      id: 6,
+      name: 'Super cup 125',
+      href: '#',
+      price: '$35',
+      imageSrc: supercupc125,
+      imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },]
+  const xecontay = [
+      {
+        id: 1,
+        name: 'Winner X 2024',
+        href: '#',
+        price: '$48',
+        imageSrc: winnerx2024,
+        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+      },
+      {
+        id: 2,
+        name: 'CBR150R',
+        href: '#',
+        price: '$35',
+        imageSrc: cbr150r,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    },]
   return (
     <div>
-      <NavbarWithMegaMenu/>
-      
+        <div>
+            <div className="">
+              <NavbarWithMegaMenu />
+            </div>
+            <Carousel
+                  placeholder=""
+                  className="rounded-xl md:mt-28"
+                  navigation={({ setActiveIndex, activeIndex, length }) => (
+                    <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+                      {new Array(length).fill("").map((_, i) => (
+                        <span
+                          key={i}
+                          className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                            activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                          }`}
+                          onClick={() => setActiveIndex(i)}
+                        />
+                      ))}
+                    </div>
+                  )}
+            >
+                  <img
+                    src="https://cdn.honda.com.vn/motorbikes/January2024/RK7Kxn0hDkGZH9LsqwqJ.jpg"
+                    alt="image 1"
+                    className="h-full w-full object-cover"
+                  />
+                  <img
+                    src="https://cdn.honda.com.vn/motorbikes/December2023/Fl5DEjjKFPzsWfKRcAIh.jpg"
+                    alt="image 2"
+                    className="h-full w-full object-cover"
+                  />
+                  <img
+                    src="https://cdn.honda.com.vn/motorbikes/January2024/iPDXQ7if3toZSvleSDgY.jpg"
+                    alt="image 3"
+                    className="h-full w-full object-cover"
+                  />
+            </Carousel>
+
+            <div className=''>
+                <div className="bg-white">
+                  <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                    <h2 className="sr-only">Products</h2>
+
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                      {xega.map((product) => (
+                        <a key={product.id} href={product.href} className="group">
+                          <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                            <img
+                              src={product.imageSrc}
+                              alt={product.imageAlt}
+                              className="h-full w-full object-cover object-center group-hover:opacity-75"
+                            />
+                          </div>
+                          <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                          <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <p>-------------------------------------------------------------------------------------------------------------------------------</p>
+            <div className=''>
+                <div className="bg-white">
+                  <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                    <h2 className="sr-only">Products</h2>
+
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                      {xeso.map((product) => (
+                        <a key={product.id} href={product.href} className="group">
+                          <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                            <img
+                              src={product.imageSrc}
+                              alt={product.imageAlt}
+                              className="h-full w-full object-cover object-center group-hover:opacity-75"
+                            />
+                          </div>
+                          <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                          <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <p>-------------------------------------------------------------------------------------------------------------------------------</p>
+            <div className=''>
+                <div className="bg-white">
+                  <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                    <h2 className="sr-only">Products</h2>
+
+                    <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                      {xecontay.map((product) => (
+                        <a key={product.id} href={product.href} className="group">
+                          <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                            <img
+                              src={product.imageSrc}
+                              alt={product.imageAlt}
+                              className="h-full w-full object-cover object-center group-hover:opacity-75"
+                            />
+                          </div>
+                          <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                          <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        <div>
+
+        </div>
     </div>
   )
 }

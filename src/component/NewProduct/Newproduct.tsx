@@ -1,4 +1,4 @@
-import airblade from "../../assets/images/xe/air blade.png"
+import airblade from "../../assets/images/xe/airblade.png"
 import blade from "../../assets/images/xe/blade.png"
 import future from "../../assets/images/xe/future.png"
 import lead from "../../assets/images/xe/lead.png"
