@@ -21,13 +21,13 @@ import {
 } from "@heroicons/react/24/outline";
 import {
   Bars4Icon,
-  GlobeAmericasIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  RectangleGroupIcon,
-  SquaresPlusIcon,
-  SunIcon,
-  TagIcon,
+  // GlobeAmericasIcon,
+  // NewspaperIcon,
+  // PhoneIcon,
+  // RectangleGroupIcon,
+   SquaresPlusIcon,
+  // SunIcon,
+  // TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
  
@@ -85,7 +85,7 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
+        <MenuItem className="flex items-center gap-3 rounded-lg" placeholder="">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
             {" "}
             {React.createElement(icon, {
@@ -96,6 +96,7 @@ function NavListMenu() {
           <div>
             <Typography
               variant="h6"
+              placeholder=""
               color="blue-gray"
               className="flex items-center text-sm font-bold"
             >
@@ -103,6 +104,7 @@ function NavListMenu() {
             </Typography>
             <Typography
               variant="paragraph"
+              placeholder=""
               className="text-xs !font-medium text-blue-gray-500"
             >
               {description}
@@ -123,8 +125,9 @@ function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium">
+          <Typography as="div" variant="small" className="font-medium" placeholder="">
             <ListItem
+              placeholder=""
               className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 text-xl"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
@@ -145,7 +148,7 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+        <MenuList placeholder="" className="hidden max-w-screen-xl rounded-xl lg:block">
           <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
             {renderItems}
           </ul>
@@ -162,25 +165,27 @@ function NavListMenu() {
  
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
+    <List placeholder="" className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
       <Typography
         as="a"
+        placeholder=""
         href="#"
         variant="small"
         color="blue-gray"
         className="font-medium text-xl" ///chinh text
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 " >Home</ListItem>
+        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4 " >Home</ListItem>
       </Typography>
       <NavListMenu />
       <Typography
         as="a"
+        placeholder=""
         href="#"
         variant="small"
         color="blue-gray"
         className="font-medium text-xl" ///chinh text
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4">
           Contact Us
         </ListItem>
       </Typography>
@@ -226,7 +231,7 @@ export function NavbarWithMegaMenu() {
           Chào mứng đến với cửa hàng xe máy HIỆP LỢI
         </div>
       </div>
-      <Navbar className= {`mx-auto max-w-screen-2xl px-4 py-2  ${isCrolled ? "bg-white shadow-none	" : ""}`}>
+      <Navbar placeholder="" className= {`mx-auto max-w-screen-2xl px-4 py-2  ${isCrolled ? "bg-white shadow-none	" : ""}`}>
         <div className= {`flex items-center justify-between text-blue-gray-900`}>
           {/* <Typography
             as="a"
@@ -241,14 +246,15 @@ export function NavbarWithMegaMenu() {
             <NavList />
           </div>
           <div className="hidden gap-2 lg:flex">
-            <Button variant="text" size="sm" color="blue-gray">
+            <Button placeholder="" variant="text" size="sm" color="blue-gray">
               Log In
             </Button>
-            <Button variant="gradient" size="sm">
+            <Button placeholder="" variant="gradient" size="sm">
               Sign In
             </Button>
           </div>
           <IconButton
+          placeholder=""
             variant="text"
             color="blue-gray"
             className="lg:hidden"
@@ -264,10 +270,10 @@ export function NavbarWithMegaMenu() {
         <Collapse open={openNav}>
           <NavList />
           <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-            <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
+            <Button placeholder="" variant="outlined" size="sm" color="blue-gray" fullWidth>
               Log In
             </Button>
-            <Button variant="gradient" size="sm" fullWidth>
+            <Button placeholder="" variant="gradient" size="sm" fullWidth>
               Sign In
             </Button>
           </div>

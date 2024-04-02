@@ -39,7 +39,7 @@ const Homepage = () => {
             
                     <section className="home relative text-white">
                               <div className="content flex flex-col md:flex-row">
-                                <div className="left md:w-4/5 md:mx-auto d:h-screen  w-5/6 md:p-8 p-4  md:mt-40 ">
+                                <div className="left md:w-4/5 md:mx-auto md:h-screen  w-5/6 md:p-8 p-4  md:mt-40 ">
 
                                     <h2 className="md:text-7xl md:font-bold  mb-8 ">Cửa Hàng Xe Máy - Xe Điện <span className="md:text-8xl">HIỆP LỢI</span></h2>
                                     {/* <p className=' md:text-center md:text-6xl md:mr-60 md:font-semibold'>HIỆP LỢI</p> */}
@@ -48,7 +48,7 @@ const Homepage = () => {
                                     {/* <h1 className='md:text-8xl text-5xl mb-8 font-bold text-center md:text-left'>HIỆP LỢI</h1> */}
                                     {/* <p className="text-white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
 
-                                    <div>
+                                    <div className='hidden md:block'>
                                         <ul className='md:text-lg'>
                                             <li className='flex items-center mb-2 '>
                                                 <svg className="w-6 h-6 mr-2 text-white-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
