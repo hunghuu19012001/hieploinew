@@ -30,12 +30,14 @@ import {
   // TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+
  
 const navListMenuItemsSanPham = [
   {
     title: "Xe HONDA",
     description: "Các loại xe hãng Honda: Vision, Air Blade, SH, ...",
     icon: SquaresPlusIcon,
+ 
   },
   {
     title: "Xe YAMAHA",
@@ -104,7 +106,7 @@ function NavListMenu() {
 
   const renderItems = navListMenuItemsSanPham.map(
     ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
+      <a href={`/${title.toLowerCase().replace(/\s+/g, '-')}`} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg" placeholder="">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
             {" "}

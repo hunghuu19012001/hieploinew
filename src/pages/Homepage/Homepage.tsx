@@ -16,7 +16,7 @@ import anime from 'animejs/lib/anime.es.js';
 import { useEffect } from 'react';
 import './banner.css'
 import Footer from '../../component/Footer/Footer'
-import {NavbarWithMegaMenu}  from '../../component/navbar/Navbar-materialtw'
+import {NavbarWithMegaMenu}  from '../../component/navbar/NavbarMain'
 const Homepage = () => {
     useEffect(() => {
         anime({
