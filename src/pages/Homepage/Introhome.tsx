@@ -10,10 +10,10 @@ const Introhome = () => {
                 <h4 className="text-center text-sm md:text-2xl md:mt-3 "> - Khẳng định Uy Tín và Chất Lượng - </h4>
             </div>
             <p className="mb-4 md:text-2xl">Chào mừng quý khách đến với Cửa hàng Xe Máy Hiệp Lợi - điểm đến tin cậy cho mọi nhu cầu về xe máy tại Bình Định!</p>
-            <p className="md:text-2xl">Với hơn 20 năm hoạt động từ năm 1998, chúng tôi tự hào là địa chỉ được hàng ngàn khách hàng tin dùng. Sứ mệnh của chúng tôi không chỉ là bán xe máy mà còn là <span>mang lại sự an tâm và hài lòng tối đa cho mỗi khách hàng</span>.</p>
-            <br /><p className="md:text-2xl">Chúng tôi cam kết mang đến cho khách hàng những <span>sản phẩm và dịch vụ chất lượng nhất</span>, <span>với mức giá hợp lý nhất</span>. Sự hài lòng của quý khách là niềm tự hào và động lực lớn nhất của chúng tôi.</p>
+            <p className="md:text-2xl">Với hơn 20 năm hoạt động từ năm 1998, chúng tôi tự hào là địa chỉ được hàng ngàn khách hàng tin dùng. Sứ mệnh của chúng tôi không chỉ là bán xe máy mà còn là <span className="text-button">mang lại sự an tâm và hài lòng tối đa cho mỗi khách hàng</span>.</p>
+            <br /><p className="md:text-2xl">Chúng tôi cam kết mang đến cho khách hàng những <span className='text-button'>sản phẩm và dịch vụ chất lượng nhất</span>, <span className='text-button'>với mức giá hợp lý nhất</span>. Sự hài lòng của quý khách là niềm tự hào và động lực lớn nhất của chúng tôi.</p>
         </div>
-        <section className="shipping p-50 bg-green-600 text-white p-3 mt-20">
+        <section className="shipping p-50 bg-button text-white p-3 mt-20">
             <div className="scontainer grid  grid-cols-1 md:flex md:flex-row md:justify-center md:justify-between md:h-52 md:w-4/5 md:m-auto">
                 <div className="box md:w-1/3 flex flex-row my-4">
                     <div className="img  text-center  p-30 flex items-center justify-center">

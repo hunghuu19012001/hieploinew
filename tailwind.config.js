@@ -28,6 +28,10 @@ export default withMT({
             fontFamily: {
                 sans: ['Roboto Slab', 'sans-serif'],
             },
+            colors: {
+                'button': '#ed6c02'
+
+            }
         },
     },
     plugins: [],

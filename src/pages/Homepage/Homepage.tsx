@@ -37,14 +37,15 @@ const Homepage = () => {
             </div>
             <div><Searchbar/></div> */}
             
-                    <section className="home relative text-white">
+                    <section className="home relative text-white h-screen ">
                               <div className="content flex flex-col md:flex-row">
-                                <div className="left md:w-4/5 md:mx-auto md:h-screen  w-5/6 md:p-8 p-4  md:mt-40 ">
+                                <div className="left md:w-4/5 md:mx-auto md:h-screen  w-5/6 mx-auto md:p-8 p-4  md:mt-40 ">
 
-                                    <h2 className="md:text-7xl md:font-bold  mb-8 ">Cửa Hàng Xe Máy - Xe Điện <span className="md:text-8xl">HIỆP LỢI</span></h2>
+                                    <h2 className="md:text-7xl md:font-bold  mb-8 text-center text-xl">Cửa Hàng Xe Máy - Xe Điện <span className="md:my-10 md:text-8xl hidden md:block">HIỆP LỢI</span></h2>
+                                    <h1 className='sm:hidden sm:block text-5xl font-bold text-center'>HIỆP LỢI</h1>
                                     {/* <p className=' md:text-center md:text-6xl md:mr-60 md:font-semibold'>HIỆP LỢI</p> */}
-                                    <p className="md:text-3xl md:font-semibold md:my-10 md:text-center">UY TÍN - CHUYÊN NGHIỆP - NHANH CHÓNG</p>
-                                    <p className='md:mb-10 md:text-2xl'>Với hơn 20 năm hoạt động từ năm 1998, chúng tôi tự hào là địa chỉ được hàng ngàn khách hàng tin dùng. Sứ mệnh của chúng tôi không chỉ là bán xe máy mà còn là mang lại sự an tâm và hài lòng tối đa cho mỗi khách hàng.</p>
+                                    <p className="md:text-3xl text-xs font-bold md:font-semibold md:my-10 my-5 md:text-center text-center">UY TÍN - CHUYÊN NGHIỆP - NHANH CHÓNG</p>
+                                    <p className='md:mb-10 md:text-2xl text-sm'>Với hơn 20 năm hoạt động từ năm 1998, chúng tôi tự hào là địa chỉ được hàng ngàn khách hàng tin dùng. Sứ mệnh của chúng tôi không chỉ là bán xe máy mà còn là mang lại sự an tâm và hài lòng tối đa cho mỗi khách hàng.</p>
                                     {/* <h1 className='md:text-8xl text-5xl mb-8 font-bold text-center md:text-left'>HIỆP LỢI</h1> */}
                                     {/* <p className="text-white">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
 
@@ -85,9 +86,9 @@ const Homepage = () => {
                                   </div> */}
                               </div>
                                 {/* banner-background */}
-                              <div className=" absolute top-0 -z-50  h-96 md:h-full md:w-full " >
+                              <div className=" absolute top-0 -z-50  h-screen md:h-full md:w-full " >
                                     <div className="banner-overlay w-full h-full bg-black opacity-50 absolute top-0 left-0"></div>
-                                    <img className='bannerbg md:bg-contain bg-cover   md:h-full md:w-full bg-black opacity-100' src={bannerbg} alt="" />
+                                    <img className='bannerbg md:bg-contain bg-cover h-screen  md:h-full md:w-full bg-black opacity-100' src={bannerbg} alt="" />
                               </div>
 
                   </section>

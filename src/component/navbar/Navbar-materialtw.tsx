@@ -31,20 +31,20 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
  
-const navListMenuItems = [
+const navListMenuItemsSanPham = [
   {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
+    title: "Xe HONDA",
+    description: "Các loại xe hãng Honda: Vision, Air Blade, SH, ...",
     icon: SquaresPlusIcon,
   },
   {
-    title: "About Us",
-    description: "Meet and learn about our dedication",
+    title: "Xe YAMAHA",
+    description: "Các loại xe hãng Honda: Exciter, Grande, Sirius, ...",
     icon: UserGroupIcon,
   },
   {
-    title: "Blog",
-    description: "Find the perfect solution for your needs.",
+    title: "Xe ĐIỆN",
+    description: "Các loại xe điện, xe đạp điện",
     icon: Bars4Icon,
   },
   // {
@@ -78,11 +78,31 @@ const navListMenuItems = [
   //   icon: TagIcon,
   // },
 ];
- 
+const navListMenuItemsDichVu = [
+  {
+    title: "DỊCH VỤ SỬA XE MÁY",
+    description: "Tư vấn, bảo dưỡng các loại xe",
+    icon: SquaresPlusIcon,
+  },
+  {
+    title: "DỊCH VỤ BẢO HIỂM",
+    description: "Bán các loại bảo hiểm xe máy",
+    icon: UserGroupIcon,
+  },
+  {
+    title: "DỊCH VỤ LÀM CÁC THỦ TỤC XE MÁY, OTO",
+    description: "Nhận làm các thủ tục: sang tên, mất đăng kí,...",
+    icon: Bars4Icon,
+  }];
+
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const renderItems = navListMenuItems.map(
+
+  const [isNewMenuOpen, setIsNewMenuOpen] = React.useState(false);
+  const [isNewMobileMenuOpen, setIsNewMobileMenuOpen] = React.useState(false);
+
+  const renderItems = navListMenuItemsSanPham.map(
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg" placeholder="">
@@ -114,6 +134,36 @@ function NavListMenu() {
       </a>
     ),
   );
+  const renderNewItems = navListMenuItemsDichVu.map(({ icon, title, description }, key) => (
+    <a href="#" key={key}>
+      <MenuItem placeholder="" className="flex items-center gap-3 rounded-lg">
+        <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+          {" "}
+          {React.createElement(icon, {
+            strokeWidth: 2,
+            className: "h-6 text-gray-900 w-6",
+          })}
+        </div>
+        <div>
+          <Typography
+            placeholder=""
+            variant="h6"
+            color="blue-gray"
+            className="flex items-center text-sm font-bold"
+          >
+            {title}
+          </Typography>
+          <Typography
+            placeholder=""
+            variant="paragraph"
+            className="text-xs !font-medium text-blue-gray-500"
+          >
+            {description}
+          </Typography>
+        </div>
+      </MenuItem>
+    </a>
+  ));
  
   return (
     <React.Fragment>
@@ -132,7 +182,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Sản Phẩm
+              SẢN PHẨM
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -149,14 +199,56 @@ function NavListMenu() {
           </Typography>
         </MenuHandler>
         <MenuList placeholder="" className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-3 gap-y-2 outline-none outline-0">
+          <ul className="grid grid-cols-1 gap-y-2 outline-none outline-0">
             {renderItems}
           </ul>
         </MenuList>
       </Menu>
-      
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
+      </div>
+
+      <Menu
+        open={isNewMenuOpen}
+        handler={setIsNewMenuOpen}
+        offset={{ mainAxis: 20 }}
+        placement="bottom"
+        allowHover={true}
+      >
+        <MenuHandler>
+          <Typography placeholder="" as="div" variant="small" className="font-medium">
+            <ListItem
+              placeholder=""
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900 text-xl"
+              selected={isNewMenuOpen}
+              onClick={() => setIsNewMobileMenuOpen((cur) => !cur)}
+            >
+              DỊCH VỤ
+              <ChevronDownIcon
+                strokeWidth={2.5}
+                className={`hidden h-3 w-3 transition-transform lg:block ${
+                  isNewMenuOpen ? "rotate-180" : ""
+                }`}
+              />
+              <ChevronDownIcon
+                strokeWidth={2.5}
+                className={`block h-3 w-3 transition-transform lg:hidden ${
+                  isNewMenuOpen ? "rotate-180" : ""
+                }`}
+              />
+            </ListItem>
+          </Typography>
+        </MenuHandler>
+        <MenuList placeholder="" className="hidden max-w-screen-xl rounded-xl lg:block">
+          <ul className="grid grid-cols-1 gap-y-2 outline-none outline-0">
+            {renderNewItems}
+          </ul>
+        </MenuList>
+      </Menu>
+      
+      
+      <div className="block lg:hidden">
+        <Collapse open={isNewMobileMenuOpen}>{renderNewItems}</Collapse>
       </div>
     </React.Fragment>
     
@@ -174,7 +266,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium text-xl" ///chinh text
       >
-        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4 " >Home</ListItem>
+        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4 " >TRANG CHỦ</ListItem>
       </Typography>
       <NavListMenu />
       <Typography
@@ -186,7 +278,7 @@ function NavList() {
         className="font-medium text-xl" ///chinh text
       >
         <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4">
-          Contact Us
+          LIÊN HỆ
         </ListItem>
       </Typography>
     </List>

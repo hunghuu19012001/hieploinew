@@ -8,11 +8,3 @@
     width: 100%;
     z-index: -1;
 } */
-
-@media only screen and (max-width:768px) {
-    .bannerbg {
-        background-size: cover;
-        height: 70vh;
-        width: 100%;
-    }
-}
