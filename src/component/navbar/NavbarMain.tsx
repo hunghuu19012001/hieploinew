@@ -263,7 +263,7 @@ function NavList() {
       <Typography
         as="a"
         placeholder=""
-        href="#"
+        href=""
         variant="small"
         color="blue-gray"
         className="font-medium text-xl" ///chinh text
