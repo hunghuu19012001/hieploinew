@@ -8,7 +8,7 @@ import Introhome from '../Homepage/Introhome'
 // import Footer from '../../component/Footer/Footer'
 // import Searchbar from './Searchbar'
 // import banner3 from "../../assets/images/banner3.jpg"
-import shbg from "../../assets/images/shbg.png"
+// import shbg from "../../assets/images/shbg.png"
 // import bannerbg from "../../assets/images/slide.png"
 import bannerbg from "../../assets/images/bg-banner.jpg"
 
