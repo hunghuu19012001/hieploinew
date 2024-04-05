@@ -129,17 +129,17 @@ const Yamahapage = () => {
                   <img
                     src="https://yamaha-motor.com.vn/wp/wp-content/uploads/2021/09/08j_web.png"
                     alt="image 1"
-                    className="h-screen w-full object-cover"
+                    className=" w-full object-cover"
                   />
                   <img
                     src="https://yamaha-motor.com.vn/wp/wp-content/uploads/2022/07/Finn-digital-01.jpg"
                     alt="image 2"
-                    className="h-screen w-full object-cover"
+                    className=" w-full object-cover"
                   />
                   <img
                     src="https://yamaha-motor.com.vn/wp/wp-content/uploads/2022/09/55b2fbb82e896100b3e0f00094a58e74.jpg"
                     alt="image 3"
-                    className="h-screen w-full object-cover"
+                    className=" w-full object-cover"
                   />
             </Carousel>
             <div className="grid grid-cols-2 md:grid-cols-4 py-4 gap-2 text-gray-700 px-4 lg:px-0 lg:max-w-7xl mx-auto">
