@@ -1,4 +1,5 @@
 import {NavbarWithMegaMenu} from '../../../component/navbar/NavbarMain'
+import Footer from '../../../component/Footer/Footer'
 import { Carousel } from "@material-tailwind/react";
 import './Hondapage.css'
 import airblade from '../../../assets/images/xehonda/airblade.png'
@@ -21,7 +22,8 @@ import future from '../../../assets/images/xehonda/future.jpg'
 import supercupc125 from '../../../assets/images/xehonda/supercupc125.png'
 import winnerx2024 from '../../../assets/images/xehonda/winnerx2024.jpg'
 import cbr150r from '../../../assets/images/xehonda/cbr150r.png'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Hondapage = () => {
   const xega = [
@@ -205,10 +207,47 @@ const Hondapage = () => {
                     className="h-full w-full object-cover"
                   />
             </Carousel>
+            <div className="grid grid-cols-2 md:grid-cols-4 py-4 gap-2 text-gray-700 px-4 lg:px-0 lg:max-w-7xl mx-auto">
+              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative  my-auto w-full h-full cursor-pointer">
+                <div className='text-sm lg:text-xl lg:font-medium mx-auto'>
+                  <a href="">XE TAY GA</a>
+                </div>
+                <div className="absolute text-xs lg:text-base right-4 top-1/2 transform -translate-y-1/2">
+                  <FontAwesomeIcon  icon={faAngleDown} />
+                </div>
+              </div>
+              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative my-auto w-full h-full cursor-pointer">
+                <div className='text-sm lg:text-xl lg:font-medium mx-auto'>
+                  <a href="">XE SỐ</a>
+                </div>
+                <div className="absolute text-xs lg:text-base right-4 top-1/2 transform -translate-y-1/2">
+                  <FontAwesomeIcon icon={faAngleDown} />
+                </div>
+              </div>
+              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative my-auto w-full h-full cursor-pointer">
+                <div className='text-sm lg:text-xl lg:font-medium mx-auto'>
+                  <a href="">XE CÔN TAY</a>
+                </div>
+                <div className="absolute text-xs lg:text-base right-4 top-1/2 transform -translate-y-1/2">
+                  <FontAwesomeIcon icon={faAngleDown} />
+                </div>
+              </div>
+              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative my-auto w-full h-full cursor-pointer">
+                <div className='text-sm lg:text-xl lg:font-medium mx-auto'>
+                  <a href=""> XE PK LỚN</a>
+                </div>
+                <div className="absolute text-xs lg:text-base right-4 top-1/2 transform -translate-y-1/2">
+                  <FontAwesomeIcon icon={faAngleDown} />
+                </div>
+              </div>
+            </div>
 
-            <div className=''>
+            <div className='px-4'>
+                <div className="bg-orange-100 border-t-4 border-orange-900 lg:max-w-7xl mx-auto">
+                  <p className="text-center text-3xl font-bold py-2">XE TAY GA</p>
+                </div>
                 <div className="bg-white">
-                  <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                  <div className="mx-auto max-w-2xl pb-16 pt-5 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                     <h2 className="sr-only">Products</h2>
 
                     <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -221,7 +260,7 @@ const Hondapage = () => {
                               className="h-full w-full object-cover object-center group-hover:opacity-75"
                             />
                           </div>
-                          <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                          <h3 className="mt-4 text-lg lg:text-2xl font-bold text-orange-900">{product.name}</h3>
                           <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
                         </a>
                       ))}
@@ -229,10 +268,13 @@ const Hondapage = () => {
                   </div>
                 </div>
             </div>
-            <p>-------------------------------------------------------------------------------------------------------------------------------</p>
-            <div className=''>
+            {/* //////////// */}
+            <div className='px-4'>
+                <div className="bg-orange-100 border-t-4 border-orange-900 lg:max-w-7xl mx-auto">
+                  <p className="text-center text-3xl font-bold py-2">XE SỐ</p>
+                </div>
                 <div className="bg-white">
-                  <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                  <div className="mx-auto max-w-2xl pb-16 pt-5 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                     <h2 className="sr-only">Products</h2>
 
                     <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -245,7 +287,7 @@ const Hondapage = () => {
                               className="h-full w-full object-cover object-center group-hover:opacity-75"
                             />
                           </div>
-                          <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                          <h3 className="mt-4 text-lg lg:text-2xl font-bold text-orange-900">{product.name}</h3>
                           <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
                         </a>
                       ))}
@@ -253,10 +295,13 @@ const Hondapage = () => {
                   </div>
                 </div>
             </div>
-            <p>-------------------------------------------------------------------------------------------------------------------------------</p>
-            <div className=''>
+            {/* <p>-------------------------------------------------------------------------------------------------------------------------------</p> */}
+            <div className='px-4'>
+                <div className="bg-orange-100 border-t-4 border-orange-900 lg:max-w-7xl mx-auto">
+                  <p className="text-center text-3xl font-bold py-2">XE CÔN TAY</p>
+                </div>
                 <div className="bg-white">
-                  <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+                  <div className="mx-auto max-w-2xl pb-16 pt-5 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                     <h2 className="sr-only">Products</h2>
 
                     <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
@@ -269,7 +314,7 @@ const Hondapage = () => {
                               className="h-full w-full object-cover object-center group-hover:opacity-75"
                             />
                           </div>
-                          <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
+                          <h3 className="mt-4 text-lg lg:text-2xl font-bold text-orange-900">{product.name}</h3>
                           <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
                         </a>
                       ))}
@@ -279,9 +324,7 @@ const Hondapage = () => {
             </div>
 
         </div>
-        <div>
-
-        </div>
+        <Footer/>
     </div>
   )
 }
