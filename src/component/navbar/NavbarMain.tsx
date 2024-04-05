@@ -104,9 +104,18 @@ function NavListMenu() {
   const [isNewMenuOpen, setIsNewMenuOpen] = React.useState(false);
   const [isNewMobileMenuOpen, setIsNewMobileMenuOpen] = React.useState(false);
 
-  const renderItems = navListMenuItemsSanPham.map(
-    ({ icon, title, description }, key) => (
-      <a href={`/${title.toLowerCase().replace(/\s+/g, '-')}`} key={key}>
+  // Hàm để loại bỏ dấu trong chuỗi
+  function removeAccents(str: string): string {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
+const renderItems = navListMenuItemsSanPham.map(
+  ({ icon, title, description }, key) => {
+    // Loại bỏ dấu trong tiêu đề
+    const titleWithoutAccents = removeAccents(title);
+
+    return (
+      <a href={`/${titleWithoutAccents.toLowerCase().replace(/\s+/g, '-')}`} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg" placeholder="">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
             {" "}
@@ -134,8 +143,9 @@ function NavListMenu() {
           </div>
         </MenuItem>
       </a>
-    ),
-  );
+    );
+  }
+);
   const renderNewItems = navListMenuItemsDichVu.map(({ icon, title, description }, key) => (
     <a href="#" key={key}>
       <MenuItem placeholder="" className="flex items-center gap-3 rounded-lg">
