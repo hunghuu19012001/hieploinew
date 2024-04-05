@@ -49,36 +49,7 @@ const navListMenuItemsSanPham = [
     description: "Các loại xe điện, xe đạp điện",
     icon: Bars4Icon,
   },
-  // {
-  //   title: "Services",
-  //   description: "Learn how we can help you achieve your goals.",
-  //   icon: SunIcon,
-  // },
-  // {
-  //   title: "Support",
-  //   description: "Reach out to us for assistance or inquiries",
-  //   icon: GlobeAmericasIcon,
-  // },
-  // {
-  //   title: "Contact",
-  //   description: "Find the perfect solution for your needs.",
-  //   icon: PhoneIcon,
-  // },
-  // {
-  //   title: "News",
-  //   description: "Read insightful articles, tips, and expert opinions.",
-  //   icon: NewspaperIcon,
-  // },
-  // {
-  //   title: "Products",
-  //   description: "Find the perfect solution for your needs.",
-  //   icon: RectangleGroupIcon,
-  // },
-  // {
-  //   title: "Special Offers",
-  //   description: "Explore limited-time deals and bundles",
-  //   icon: TagIcon,
-  // },
+
 ];
 const navListMenuItemsDichVu = [
   {
@@ -96,7 +67,10 @@ const navListMenuItemsDichVu = [
     description: "Nhận làm các thủ tục: sang tên, mất đăng kí,...",
     icon: Bars4Icon,
   }];
-
+// Hàm loại bỏ dấu trong chuỗi
+function removeAccents(str:string) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -104,21 +78,13 @@ function NavListMenu() {
   const [isNewMenuOpen, setIsNewMenuOpen] = React.useState(false);
   const [isNewMobileMenuOpen, setIsNewMobileMenuOpen] = React.useState(false);
 
-  // Hàm để loại bỏ dấu trong chuỗi
-  function removeAccents(str: string): string {
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  }
-
-const renderItems = navListMenuItemsSanPham.map(
-  ({ icon, title, description }, key) => {
-    // Loại bỏ dấu trong tiêu đề
-    const titleWithoutAccents = removeAccents(title);
-
+  
+  const renderItems = navListMenuItemsSanPham.map(({ icon, title, description }, key) => {
+    const urlTitle = removeAccents(title.toLowerCase()).replace(/\s+/g, '-');
     return (
-      <a href={`/${titleWithoutAccents.toLowerCase().replace(/\s+/g, '-')}`} key={key}>
+      <a href={`/${urlTitle}`} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg" placeholder="">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
               className: "h-6 text-gray-900 w-6",
@@ -144,38 +110,37 @@ const renderItems = navListMenuItemsSanPham.map(
         </MenuItem>
       </a>
     );
-  }
-);
-  const renderNewItems = navListMenuItemsDichVu.map(({ icon, title, description }, key) => (
-    <a href="#" key={key}>
-      <MenuItem placeholder="" className="flex items-center gap-3 rounded-lg">
-        <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-          {" "}
-          {React.createElement(icon, {
-            strokeWidth: 2,
-            className: "h-6 text-gray-900 w-6",
-          })}
-        </div>
-        <div>
-          <Typography
-            placeholder=""
-            variant="h6"
-            color="blue-gray"
-            className="flex items-center text-sm font-bold"
-          >
-            {title}
-          </Typography>
-          <Typography
-            placeholder=""
-            variant="paragraph"
-            className="text-xs !font-medium text-blue-gray-500"
-          >
-            {description}
-          </Typography>
-        </div>
-      </MenuItem>
-    </a>
-  ));
+  });
+    const renderNewItems = navListMenuItemsDichVu.map(({ icon, title, description }, key) => (
+      <a href="#" key={key}>
+        <MenuItem placeholder="" className="flex items-center gap-3 rounded-lg">
+          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+            {" "}
+            {React.createElement(icon, {
+              strokeWidth: 2,
+              className: "h-6 text-gray-900 w-6",
+            })}
+          </div>
+          <div>
+            <Typography
+              placeholder=""
+              variant="h6"
+              color="blue-gray"
+              className="flex items-center text-sm font-bold"
+            >
+              {title}
+            </Typography>
+            <Typography
+              placeholder=""
+              variant="paragraph"
+              className="text-xs !font-medium text-blue-gray-500"
+            >
+              {description}
+            </Typography>
+          </div>
+        </MenuItem>
+      </a>
+    ));
  
   return (
     <React.Fragment>
