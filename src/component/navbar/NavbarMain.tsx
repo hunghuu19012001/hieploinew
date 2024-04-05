@@ -285,8 +285,9 @@ export function NavbarWithMegaMenu() {
   }, []);
  
   return (
-    <div className={`md:fixed z-40  top-0 w-full  shadow-indigo-500/10 	  ${isCrolled ? "bg-white 	" : ""}`}>
-      <div className="md:flex md:justify-between md:max-w-screen-2xl md:mx-auto">
+    // <div className={`md:fixed z-40  top-5 w-full  shadow-indigo-500/10 	  ${isCrolled ? "bg-white 	top-0" : ""}`}>
+      <div className="md:fixed z-40  top-5 w-full  shadow-indigo-500/10 " >
+      {/* <div className="md:flex md:justify-between md:max-w-screen-2xl md:mx-auto">
         <div className="">
             <div>
               <p>Hotline: <span>0917973844 - 0914973844 - 0914672688</span></p>
@@ -296,7 +297,7 @@ export function NavbarWithMegaMenu() {
         <div>
           Chào mứng đến với cửa hàng xe máy HIỆP LỢI
         </div>
-      </div>
+      </div> */}
       <Navbar placeholder="" className= {`mx-auto max-w-screen-2xl px-4 py-2  ${isCrolled ? "bg-white shadow-none	" : ""}`}>
         <div className= {`flex items-center justify-between text-blue-gray-900`}>
           {/* <Typography
