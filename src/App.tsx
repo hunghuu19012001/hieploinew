@@ -6,6 +6,7 @@ import Hondapage from './pages/Sanpham/Honda/Hondapage';
 import Homepage from './pages/Homepage/Homepage';
 import Yamahapage from './pages/Sanpham/Yamaha/Yamahapage';
 
+import Xedienpage from './pages/Sanpham/Xedien/Xedienpage';
 function App() {
 
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path='' element={<Homepage/>}/>
               <Route path='xe-honda' element={<Hondapage/>}/>
               <Route path='xe-yamaha' element={<Yamahapage/>}/>
-              <Route path='xe-điện' element={<Hondapage/>}/>
+              <Route path='xe-điện' element={<Xedienpage/>}/>
           </Routes>
       </BrowserRouter>
     </div>
