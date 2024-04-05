@@ -45,7 +45,7 @@ const navListMenuItemsSanPham = [
     icon: UserGroupIcon,
   },
   {
-    title: "Xe ĐIỆN",
+    title: "Xe Dien",
     description: "Các loại xe điện, xe đạp điện",
     icon: Bars4Icon,
   },
@@ -67,10 +67,7 @@ const navListMenuItemsDichVu = [
     description: "Nhận làm các thủ tục: sang tên, mất đăng kí,...",
     icon: Bars4Icon,
   }];
-// Hàm loại bỏ dấu trong chuỗi
-function removeAccents(str:string) {
-  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-}
+
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -79,12 +76,12 @@ function NavListMenu() {
   const [isNewMobileMenuOpen, setIsNewMobileMenuOpen] = React.useState(false);
 
   
-  const renderItems = navListMenuItemsSanPham.map(({ icon, title, description }, key) => {
-    const urlTitle = removeAccents(title.toLowerCase()).replace(/\s+/g, '-');
-    return (
-      <a href={`/${urlTitle}`} key={key}>
+  const renderItems = navListMenuItemsSanPham.map(
+    ({ icon, title, description }, key) => (
+      <a href={`/${title.toLowerCase().replace(/\s+/g, '-')}`} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg" placeholder="">
           <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+            {" "}
             {React.createElement(icon, {
               strokeWidth: 2,
               className: "h-6 text-gray-900 w-6",
@@ -109,8 +106,8 @@ function NavListMenu() {
           </div>
         </MenuItem>
       </a>
-    );
-  });
+    ),
+  );
     const renderNewItems = navListMenuItemsDichVu.map(({ icon, title, description }, key) => (
       <a href="#" key={key}>
         <MenuItem placeholder="" className="flex items-center gap-3 rounded-lg">
