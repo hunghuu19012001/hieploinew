@@ -285,8 +285,8 @@ export function NavbarWithMegaMenu() {
   }, []);
  
   return (
-    // <div className={`md:fixed z-40  top-5 w-full  shadow-indigo-500/10 	  ${isCrolled ? "bg-white 	top-0" : ""}`}>
-      <div className="md:fixed z-40  top-5 w-full  shadow-indigo-500/10 " >
+    <div className={`md:bg-white z-40  top-5    md:max-w-full  ${isCrolled ? "md:fixed md:max-w-screen-2xl  md:mx-auto	left-0 right-0 rounded-2xl " : ""}`}>
+      
       {/* <div className="md:flex md:justify-between md:max-w-screen-2xl md:mx-auto">
         <div className="">
             <div>
@@ -298,8 +298,8 @@ export function NavbarWithMegaMenu() {
           Chào mứng đến với cửa hàng xe máy HIỆP LỢI
         </div>
       </div> */}
-      <Navbar placeholder="" className= {`mx-auto max-w-screen-2xl px-4 py-2  ${isCrolled ? "bg-white shadow-none	" : ""}`}>
-        <div className= {`flex items-center justify-between text-blue-gray-900`}>
+      <Navbar placeholder="" className= {`md:mx-auto md:max-w-screen-2xl px-4 py-2 ${isCrolled ? "shadow-blue-gray-300" : "shadow-none"} ${isCrolled ? "bg-white md:max-w-screen-2xl	md:mx-auto " : ""}`}>
+        <div className= {` items-center  	flex flex-row justify-between`}>
           {/* <Typography
             as="a"
             href="#"

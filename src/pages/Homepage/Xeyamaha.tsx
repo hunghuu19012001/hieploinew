@@ -13,8 +13,8 @@ const xeyamaha = () => {
     <div>
       <section className="latest top">
             <div className="scontainer text-center w-4/5 m-auto md:p-12">
-            <div className="heading text-left relative md:mb-10 mt-10 my-5 bg-deep-orange-100 rounded-md flex flex-row justify-between">
-                    <h1 className="md:text-4xl font-normal text-2xl w-fit bg-deep-orange-500 text-white p-1 rounded-md">YAMAHA</h1>
+            <div className="heading text-left relative md:mb-10 mt-10 my-5 bg-red-100 rounded-md flex flex-row justify-between">
+                    <h1 className="md:text-4xl font-normal text-2xl w-fit bg-button text-white p-1 rounded-md">YAMAHA</h1>
                     {/* <div className="lines relative w-full flex1">
                         <div className="line border border-solid border-gray-300 h-3 absolute left-0 top-12 z-10"> <FontAwesomeIcon className="absolute right-0 top-0 text-white" icon={faCircle}/> </div>
                         <button>50% OFF</button>
@@ -68,7 +68,7 @@ const xeyamaha = () => {
                                     <p className="flex justify-center text-lg font-semibold">$2000</p>
                                 </div>
                                 <div className="text-right my-auto ">
-                                        <Button variant="contained" color="warning">
+                                        <Button variant="contained" color="error">
                                             Xem chi tiết
                                         </Button>
                                 </div>
@@ -110,7 +110,7 @@ const xeyamaha = () => {
                                     <p className="flex justify-center text-lg font-semibold">$2000</p>
                                 </div>
                                 <div className="text-right my-auto ">
-                                        <Button variant="contained" color="warning">
+                                        <Button variant="contained" color="error">
                                             Xem chi tiết
                                         </Button>
                                 </div>
@@ -152,7 +152,7 @@ const xeyamaha = () => {
                                     <p className="flex justify-center text-lg font-semibold">$2000</p>
                                 </div>
                                 <div className="text-right my-auto ">
-                                        <Button variant="contained" color="warning">
+                                        <Button variant="contained" color="error">
                                             Xem chi tiết
                                         </Button>
                                 </div>
@@ -194,7 +194,7 @@ const xeyamaha = () => {
                                     <p className="flex justify-center text-lg font-semibold">$2000</p>
                                 </div>
                                 <div className="text-right my-auto ">
-                                        <Button variant="contained" color="warning">
+                                        <Button variant="contained" color="error">
                                             Xem chi tiết
                                         </Button>
                                 </div>

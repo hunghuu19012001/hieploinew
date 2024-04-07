@@ -125,7 +125,7 @@ const Xedienpage = () => {
             </div>
             <Carousel
                   placeholder=""
-                  className="rounded-xl md:mt-28"
+                  className="rounded-xl "
                   navigation={({ setActiveIndex, activeIndex, length }) => (
                     <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                       {new Array(length).fill("").map((_, i) => (
@@ -192,7 +192,7 @@ const Xedienpage = () => {
             </div> */}
 
             <div className='px-4 mt-10'>
-                <div className="bg-orange-100 border-t-4 border-orange-900 lg:max-w-7xl mx-auto">
+                <div className="bg-red-50 border-t-4 border-button lg:max-w-7xl mx-auto">
                   <p className="text-center text-3xl font-bold py-2">XE ĐIỆN</p>
                 </div>
                 <div className="bg-white">
@@ -209,7 +209,7 @@ const Xedienpage = () => {
                               className="h-full w-full object-cover object-center group-hover:opacity-75"
                             />
                           </div>
-                          <h3 className="mt-4 text-lg lg:text-2xl font-bold text-orange-900">{product.name}</h3>
+                          <h3 className="mt-4 text-lg lg:text-2xl font-bold text-button">{product.name}</h3>
                           <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
                         </a>
                       ))}

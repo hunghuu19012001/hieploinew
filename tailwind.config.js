@@ -29,7 +29,7 @@ export default withMT({
                 sans: ['Roboto Slab', 'sans-serif'],
             },
             colors: {
-                'button': '#ed6c02'
+                'button': '#EE0C35'
 
             }
         },

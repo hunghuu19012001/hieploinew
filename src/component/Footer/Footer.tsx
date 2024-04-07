@@ -29,19 +29,19 @@ const Footer = () => {
                         <ul className="grid lg:grid-cols-2  gap-2 md:gap-4 md:mt-4 ">
                             <div className="bg-gray-900 py-5 flex flex-row items-center hover:bg-black hover:text-gray-600 cursor-pointer lg:order-1">
                                 <FontAwesomeIcon className="ml-10 mr-5" icon={faPhone} />
-                                <a href="tel:+84917973844" className="text-3xl font-semibold pr-10 ">0917973844</a>
+                                <a href="tel:+84917973844" className="md:text-3xl text-xl font-semibold pr-10 ">0917973844</a>
                             </div>
                             <div className="bg-gray-900 py-5 flex flex-row items-center hover:bg-black hover:text-gray-600 cursor-pointer lg:order-3">
                                 <FontAwesomeIcon className="ml-10 mr-5" icon={faPhone} />
-                                <a href="tel:+84917973844" className="text-3xl font-semibold pr-10 ">0914672688</a>
+                                <a href="tel:+84917973844" className="md:text-3xl text-xl font-semibold pr-10 ">0914672688</a>
                             </div>
                             <div className="bg-gray-900 py-5 flex flex-row items-center hover:bg-black hover:text-gray-600 cursor-pointer lg:order-5">
                                 <FontAwesomeIcon className="ml-10 mr-5" icon={faPhone} />
-                                <a href="tel:+84917973844" className="text-3xl font-semibold pr-10 ">0914973844</a>
+                                <a href="tel:+84917973844" className="md:text-3xl text-xl font-semibold pr-10 ">0914973844</a>
                             </div>
                             <div className="bg-gray-900 py-5 flex flex-row items-center hover:bg-black hover:text-gray-600 cursor-pointer lg:order-2">
                                 <FontAwesomeIcon className="lg:ml-5 lg:mr-2  ml-2" icon={faEnvelope} />
-                                <a href="mailto:+84917973844" className="lg:text-base lg:pr-2 text-base font-semibold mx-auto">cuahangxemayhieploi@gmail.com</a>
+                                <a href="mailto:+84917973844" className="lg:text-base lg:pr-2 text-base font-semibold ml-4">cuahangxemayhieploi@gmail.com</a>
                             </div>
                             
                             <div className="bg-gray-900 p-5 flex flex-row justify-between  hover:bg-black hover:text-gray-600  w-full lg:order-4">
