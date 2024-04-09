@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import { Theme } from '@mui/material/styles';
-
+// import choose from '../../assets/choose.png'
 const images = [
   {
     url: 'https://cdn.honda.com.vn/motorbikes/December2023/Fl5DEjjKFPzsWfKRcAIh.jpg',
@@ -11,7 +11,7 @@ const images = [
     width: '33%',
   },
   {
-    url: 'https://yamaha-motor.com.vn/wp/wp-content/webp-express/webp-images/doc-root/wp/wp-content/uploads/2024/02/Website-Post-Image.jpg.webp',
+    url: 'https://yamaha-motor.com.vn/wp/wp-content/uploads/2022/09/995b48cb58adbabf082d0d1bd84a4348-scaled.jpg',
     title: 'Bạn muốn mua xe Yamaha?',
     width: '34%',
   },

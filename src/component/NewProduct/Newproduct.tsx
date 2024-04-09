@@ -38,7 +38,7 @@ const Newproduct = () => {
                 </div>
 
                 <div className="content md:grid md:grid-cols-4 gap-7 top flex flex-col">
-                    <div className="box p-3 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-3 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
                             <div className="flex1 flex justify-between items-center text-green-600 absolute top-0 w-full">
@@ -88,7 +88,7 @@ const Newproduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={blade} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
@@ -130,7 +130,7 @@ const Newproduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={future} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
@@ -172,7 +172,7 @@ const Newproduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={lead} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
@@ -214,7 +214,7 @@ const Newproduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={sh} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
@@ -256,7 +256,7 @@ const Newproduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={sh350i} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
@@ -298,7 +298,7 @@ const Newproduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={vario} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
@@ -340,7 +340,7 @@ const Newproduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={grande} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">

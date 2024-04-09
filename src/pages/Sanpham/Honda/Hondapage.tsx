@@ -23,8 +23,18 @@ import winnerx2024 from '../../../assets/images/xehonda/winnerx2024.jpg'
 import cbr150r from '../../../assets/images/xehonda/cbr150r.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import React, { useRef } from 'react';
 
 const Hondapage = () => {
+  const xegaRef = useRef(null);
+  const xesoRef = useRef(null);
+  const xecontayRef = useRef(null);
+
+  const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   const xega = [
     {
       id: 1,
@@ -175,7 +185,7 @@ const Hondapage = () => {
             </div>
             <Carousel
                   placeholder=""
-                  className="rounded-xl "
+                  className="rounded-xl -z-50"
                   navigation={({ setActiveIndex, activeIndex, length }) => (
                     <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                       {new Array(length).fill("").map((_, i) => (
@@ -207,25 +217,25 @@ const Hondapage = () => {
                   />
             </Carousel>
             <div className="grid grid-cols-2 md:grid-cols-4 py-4 gap-2 text-gray-700 px-4 lg:px-0 lg:max-w-7xl mx-auto">
-              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative  my-auto w-full h-full cursor-pointer">
+              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative  my-auto w-full h-full cursor-pointer " onClick={() => scrollToRef(xegaRef)}>
                 <div className='text-sm lg:text-xl lg:font-medium mx-auto'>
-                  <a href="">XE TAY GA</a>
+                  <a >XE TAY GA</a>
                 </div>
                 <div className="absolute text-xs lg:text-base right-4 top-1/2 transform -translate-y-1/2">
                   <FontAwesomeIcon  icon={faAngleDown} />
                 </div>
               </div>
-              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative my-auto w-full h-full cursor-pointer">
+              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative my-auto w-full h-full cursor-pointer" onClick={() => scrollToRef(xesoRef)}>
                 <div className='text-sm lg:text-xl lg:font-medium mx-auto'>
-                  <a href="">XE SỐ</a>
+                  <a >XE SỐ</a>
                 </div>
                 <div className="absolute text-xs lg:text-base right-4 top-1/2 transform -translate-y-1/2">
                   <FontAwesomeIcon icon={faAngleDown} />
                 </div>
               </div>
-              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative my-auto w-full h-full cursor-pointer">
+              <div className="flex flex-row border-2 px-10 py-2 rounded-3xl relative my-auto w-full h-full cursor-pointer" onClick={() => scrollToRef(xecontayRef)}>
                 <div className='text-sm lg:text-xl lg:font-medium mx-auto'>
-                  <a href="">XE CÔN TAY</a>
+                  <a >XE CÔN TAY</a>
                 </div>
                 <div className="absolute text-xs lg:text-base right-4 top-1/2 transform -translate-y-1/2">
                   <FontAwesomeIcon icon={faAngleDown} />
@@ -241,7 +251,7 @@ const Hondapage = () => {
               </div>
             </div>
 
-            <div className='px-4'>
+            <div  ref={xegaRef} className='px-4' >
                 <div className="bg-red-50 border-t-4 border-button lg:max-w-7xl mx-auto">
                   <p className="text-center text-3xl font-bold py-2">XE TAY GA</p>
                 </div>
@@ -268,7 +278,7 @@ const Hondapage = () => {
                 </div>
             </div>
             {/* //////////// */}
-            <div className='px-4'>
+            <div className='px-4' ref={xesoRef}>
                 <div className="bg-red-50 border-t-4 border-button lg:max-w-7xl mx-auto">
                   <p className="text-center text-3xl font-bold py-2">XE SỐ</p>
                 </div>
@@ -287,15 +297,15 @@ const Hondapage = () => {
                             />
                           </div>
                           <h3 className="mt-4 text-lg lg:text-2xl font-bold text-button">{product.name}</h3>
-                          <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                          <p ref={xecontayRef}  className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
                         </a>
                       ))}
-                    </div>
+                    </div >
                   </div>
                 </div>
             </div>
             {/* <p>-------------------------------------------------------------------------------------------------------------------------------</p> */}
-            <div className='px-4'>
+            <div className='px-4' >
                 <div className="bg-red-50 border-t-4 border-button lg:max-w-7xl mx-auto">
                   <p className="text-center text-3xl font-bold py-2">XE CÔN TAY</p>
                 </div>

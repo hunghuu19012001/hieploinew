@@ -1,12 +1,12 @@
 import honda from "../../assets/images/icons/honda.png"
 // import yamaha from "../../assets/images/icons/yamaha.png"
 import airblade from "../../assets/images/xe/airblade.png"
-import blade from "../../assets/images/xe/blade.png"
+import vario from "../../assets/images/xe/vario.png"
 import future from "../../assets/images/xe/future.png"
-import lead from "../../assets/images/xe/lead.png"
+import sh from "../../assets/images/xe/sh.png"
 import Button from '@mui/material/Button';
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -23,14 +23,22 @@ const xehonda = () => {
                         <button>50% OFF</button>
                         <div className="line line2 absolute right-0 left-59%"> <FontAwesomeIcon className="absolute left-full" icon={faCircle}/> </div>
                     </div> */}
-                    <div className="flex flex-row text-gray-700 text">
+                    {/* <div className="flex flex-row text-gray-700 text">
                         <a href="" className="my-auto text-xs md:text-lg">Xem tất cả</a>
                         <FontAwesomeIcon className=" my-auto text-xs px-2 " icon={faArrowRightLong} />
-                    </div>
+                    </div> */}
+                    <section className="grid w-full place-content-end bg-slate-900">
+                        <button className="btn group flex items-center bg-transparent p-2 px-6 md:text-xl text-sm font-thin tracking-widest text-white">
+                            <span className="relative pr-4 pb-1 text-black after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-button after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">Xem tất cả</span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal" className="-translate-x-2 fill-slate-700 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:scale-x-105 group-hover:fill-button">
+                            <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                            </svg>
+                        </button>
+                    </section>
                 </div>
 
                 <div className="content md:grid md:grid-cols-4 gap-7 top flex flex-col">
-                    <div className="box p-3 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-3 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={airblade} alt="" />
                             <div className="flex1 flex justify-between items-center text-green-600 absolute top-0 w-full">
@@ -43,7 +51,7 @@ const xehonda = () => {
                         {/* <div className="detalis ">
                             <h3 className="font-semibold text-xl">Air Blade</h3>
                             <p>(Bản tiêu chuẩn)</p>
-                            <h2 className="font-normal text-lg text-green-600 mx-0 my-5"> <span>Khoảng $2000</span> </h2>
+                            <h2 className="font-normal text-lg text-green-600 mx-0 my-5"> <span>Khoảng Liên hệ</span> </h2>
                             <button className="text-sm">Xem Chi Tiết</button>
                         </div> */}
                         <div className="detalis ">
@@ -68,10 +76,10 @@ const xehonda = () => {
                             <div className="flex justify-between mt-7">
                                 <div className="text-left ">
                                     <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
-                                    <p className="flex justify-center text-lg font-semibold">$2000</p>
+                                    <p className="flex justify-center text-lg font-semibold">Liên hệ</p>
                                 </div>
                                 <div className="text-right my-auto ">
-                                        <Button variant="contained" color="error">
+                                        <Button variant="contained" color="error" className="font-extrabold">
                                             Xem chi tiết
                                         </Button>
                                 </div>
@@ -79,9 +87,9 @@ const xehonda = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
-                            <img src={blade} alt="" />
+                            <img src={vario} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
                                 {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 <img className="text-xl" src={honda} alt="" />                            
@@ -90,7 +98,7 @@ const xehonda = () => {
 
                         <div className="detalis ">
                             <div className="flex">
-                                <h3 className="font-semibold text-xl">Blade</h3>
+                                <h3 className="font-semibold text-xl">Vario</h3>
                             </div>
 
                             <div className="flex justify-between text-gray-500 mt-3">
@@ -110,7 +118,7 @@ const xehonda = () => {
                             <div className="flex justify-between mt-7">
                                 <div className="text-left ">
                                     <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
-                                    <p className="flex justify-center text-lg font-semibold">$2000</p>
+                                    <p className="flex justify-center text-lg font-semibold">Liên hệ</p>
                                 </div>
                                 <div className="text-right my-auto ">
                                         <Button variant="contained" color="error">
@@ -121,7 +129,7 @@ const xehonda = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
                             <img src={future} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
@@ -152,7 +160,7 @@ const xehonda = () => {
                             <div className="flex justify-between mt-7">
                                 <div className="text-left ">
                                     <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
-                                    <p className="flex justify-center text-lg font-semibold">$2000</p>
+                                    <p className="flex justify-center text-lg font-semibold">Liên hệ</p>
                                 </div>
                                 <div className="text-right my-auto ">
                                         <Button variant="contained" color="error">
@@ -163,9 +171,9 @@ const xehonda = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-green-500 cursor-pointer bg-stone-50">
+                    <div className="box p-2 md:p-8 rounded-xl border border-gray-300 transition duration-500 hover:border-red-400 cursor-pointer bg-stone-50">
                         <div className="img relative flex justify-center">
-                            <img src={lead} alt="" />
+                            <img src={sh} alt="" />
                             <div className="flex1 flex justify-between text-green-600 absolute top-0 w-full">
                                 {/* <label className="w-12 h-12 flex items-center justify-center rounded-full text-white bg-green-600 text-center">50%</label> */}
                                 <img className="text-xl" src={honda} alt="" />
@@ -174,7 +182,7 @@ const xehonda = () => {
 
                         <div className="detalis ">
                             <div className="flex">
-                                <h3 className="font-semibold text-xl">Lead</h3>
+                                <h3 className="font-semibold text-xl">SH 125i/160i</h3>
                             </div>
 
                             <div className="flex justify-between text-gray-500 mt-3">
@@ -194,7 +202,7 @@ const xehonda = () => {
                             <div className="flex justify-between mt-7">
                                 <div className="text-left ">
                                     <p className="text-sm text-gray-500 flex ">Giá Khoảng</p>
-                                    <p className="flex justify-center text-lg font-semibold">$2000</p>
+                                    <p className="flex justify-center text-lg font-semibold">Liên hệ</p>
                                 </div>
                                 <div className="text-right my-auto ">
                                         <Button variant="contained" color="error">

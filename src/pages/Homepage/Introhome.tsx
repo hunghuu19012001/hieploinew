@@ -3,7 +3,7 @@ import { faTools, faScrewdriver, faPhone  } from '@fortawesome/free-solid-svg-ic
 
 const Introhome = () => {
   return (
-    <div>
+    <div className='mt-10'>
         <div className="w-4/5 m-auto">
             <div className="mb-5">
                 <h3 className="text-center text-xl font-bold md:text-5xl">Cửa hàng Xe Máy HIỆP LỢI</h3>

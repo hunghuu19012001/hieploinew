@@ -21,23 +21,15 @@ import {
 } from "@heroicons/react/24/outline";
 import {
   Bars4Icon,
-  // GlobeAmericasIcon,
-  // NewspaperIcon,
-  // PhoneIcon,
-  // RectangleGroupIcon,
-   SquaresPlusIcon,
-  // SunIcon,
-  // TagIcon,
+  SquaresPlusIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 
- 
 const navListMenuItemsSanPham = [
   {
     title: "Xe HONDA",
     description: "Các loại xe hãng Honda: Vision, Air Blade, SH, ...",
     icon: SquaresPlusIcon,
- 
   },
   {
     title: "Xe YAMAHA",
@@ -49,8 +41,8 @@ const navListMenuItemsSanPham = [
     description: "Các loại xe điện, xe đạp điện",
     icon: Bars4Icon,
   },
-
 ];
+
 const navListMenuItemsDichVu = [
   {
     title: "DỊCH VỤ SỬA XE MÁY",
@@ -66,7 +58,8 @@ const navListMenuItemsDichVu = [
     title: "DỊCH VỤ LÀM CÁC THỦ TỤC XE MÁY, OTO",
     description: "Nhận làm các thủ tục: sang tên, mất đăng kí,...",
     icon: Bars4Icon,
-  }];
+  },
+];
 
 function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -75,70 +68,66 @@ function NavListMenu() {
   const [isNewMenuOpen, setIsNewMenuOpen] = React.useState(false);
   const [isNewMobileMenuOpen, setIsNewMobileMenuOpen] = React.useState(false);
 
-  
-  const renderItems = navListMenuItemsSanPham.map(
-    ({ icon, title, description }, key) => (
-      <a href={`/${title.toLowerCase().replace(/\s+/g, '-')}`} key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg" placeholder="">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
-            })}
-          </div>
-          <div>
-            <Typography
-              variant="h6"
-              placeholder=""
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
-            >
-              {title}
-            </Typography>
-            <Typography
-              variant="paragraph"
-              placeholder=""
-              className="text-xs !font-medium text-blue-gray-500"
-            >
-              {description}
-            </Typography>
-          </div>
-        </MenuItem>
-      </a>
-    ),
-  );
-    const renderNewItems = navListMenuItemsDichVu.map(({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem placeholder="" className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
-            })}
-          </div>
-          <div>
-            <Typography
-              placeholder=""
-              variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
-            >
-              {title}
-            </Typography>
-            <Typography
-              placeholder=""
-              variant="paragraph"
-              className="text-xs !font-medium text-blue-gray-500"
-            >
-              {description}
-            </Typography>
-          </div>
-        </MenuItem>
-      </a>
-    ));
- 
+  const renderItems = navListMenuItemsSanPham.map(({ icon, title, description }, key) => (
+    <a href={`/${title.toLowerCase().replace(/\s+/g, '-')}`} key={key}>
+      <MenuItem className="flex items-center gap-3 rounded-lg" placeholder="">
+        <div className="flex items-center justify-center rounded-lg bg-blue-gray-50 p-2">
+          {React.createElement(icon, {
+            strokeWidth: 2,
+            className: "h-6 text-gray-900 w-6",
+          })}
+        </div>
+        <div>
+          <Typography
+            variant="h6"
+            placeholder=""
+            color="blue-gray"
+            className="flex items-center text-sm font-bold"
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="paragraph"
+            placeholder=""
+            className="text-xs font-medium text-blue-gray-500"
+          >
+            {description}
+          </Typography>
+        </div>
+      </MenuItem>
+    </a>
+  ));
+
+  const renderNewItems = navListMenuItemsDichVu.map(({ icon, title, description }, key) => (
+    <a href="#" key={key}>
+      <MenuItem placeholder="" className="flex items-center gap-3 rounded-lg">
+        <div className="flex items-center justify-center rounded-lg bg-blue-gray-50 p-2">
+          {React.createElement(icon, {
+            strokeWidth: 2,
+            className: "h-6 text-gray-900 w-6",
+          })}
+        </div>
+        <div>
+          <Typography
+            placeholder=""
+            variant="h6"
+            color="blue-gray"
+            className="flex items-center text-sm font-bold"
+          >
+            {title}
+          </Typography>
+          <Typography
+            placeholder=""
+            variant="paragraph"
+            className="text-xs font-medium text-blue-gray-500"
+          >
+            {description}
+          </Typography>
+        </div>
+      </MenuItem>
+    </a>
+  ));
+
   return (
     <React.Fragment>
       <Menu
@@ -219,16 +208,14 @@ function NavListMenu() {
           </ul>
         </MenuList>
       </Menu>
-      
-      
+
       <div className="block lg:hidden">
         <Collapse open={isNewMobileMenuOpen}>{renderNewItems}</Collapse>
       </div>
     </React.Fragment>
-    
   );
 }
- 
+
 function NavList() {
   return (
     <List placeholder="" className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
@@ -238,9 +225,11 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium text-xl" ///chinh text
+        className="font-medium text-xl"
       >
-        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4 " >TRANG CHỦ</ListItem>
+        <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4">
+          TRANG CHỦ
+        </ListItem>
       </Typography>
       <NavListMenu />
       <Typography
@@ -249,7 +238,7 @@ function NavList() {
         href="#"
         variant="small"
         color="blue-gray"
-        className="font-medium text-xl" ///chinh text
+        className="font-medium text-xl"
       >
         <ListItem placeholder="" className="flex items-center gap-2 py-2 pr-4">
           LIÊN HỆ
@@ -257,57 +246,38 @@ function NavList() {
       </Typography>
     </List>
   );
-} 
-// home contact us
- 
+}
+
 export function NavbarWithMegaMenu() {
   const [isCrolled, setIsCrolled] = useState(false);
-  useEffect ( () => {
+  useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 20;
+      const scrollThreshold = 0;
       const scrolled = window.scrollY > scrollThreshold;
       setIsCrolled(scrolled);
-  };
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-},[]);
-///scrol-scren/////
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const [openNav, setOpenNav] = React.useState(false);
- 
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
+      () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
- 
+
   return (
-    <div className={`md:bg-white z-40  top-5    md:max-w-full  ${isCrolled ? "md:fixed md:max-w-screen-2xl  md:mx-auto	left-0 right-0 rounded-2xl " : ""}`}>
-      
-      {/* <div className="md:flex md:justify-between md:max-w-screen-2xl md:mx-auto">
-        <div className="">
-            <div>
-              <p>Hotline: <span>0917973844 - 0914973844 - 0914672688</span></p>
-            </div>
-            
-        </div>
-        <div>
-          Chào mứng đến với cửa hàng xe máy HIỆP LỢI
-        </div>
-      </div> */}
-      <Navbar placeholder="" className= {`md:mx-auto md:max-w-screen-2xl px-4 py-2 ${isCrolled ? "shadow-blue-gray-300" : "shadow-none"} ${isCrolled ? "bg-white md:max-w-screen-2xl	md:mx-auto " : ""}`}>
-        <div className= {` items-center  	flex flex-row justify-between`}>
-          {/* <Typography
-            as="a"
-            href="#"
-            variant="h6"
-            className="mr-4 cursor-pointer py-1.5 lg:ml-2"
-          >
-            Material Tailwind
-          </Typography> */}
+    <div className={`md:bg-white z-40 md:top-5 md:max-w-full ${isCrolled ? "fixed md:max-w-screen-2xl md:mx-auto left-0 right-0 md:rounded-2xl" : ""}`}>
+      <Navbar
+        placeholder=""
+        className={`md:mx-auto md:max-w-screen-2xl px-4 py-2 ${isCrolled ? "shadow-blue-gray-300" : "shadow-none "} ${isCrolled ? "bg-white rounded-b-2xl" : ""} bg-opacity-100 md:rounded-2xl rounded-none rounded-b-2xl border-0`}
+      >
+        <div className={` items-center  	flex flex-row justify-between`}>
           <img src={logohieploi} alt="" />
           <div className="hidden lg:block">
             <NavList />
@@ -321,7 +291,7 @@ export function NavbarWithMegaMenu() {
             </Button>
           </div>
           <IconButton
-          placeholder=""
+            placeholder=""
             variant="text"
             color="blue-gray"
             className="lg:hidden"
@@ -347,6 +317,5 @@ export function NavbarWithMegaMenu() {
         </Collapse>
       </Navbar>
     </div>
-    
   );
 }
