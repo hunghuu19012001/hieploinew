@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import DetailProductData from '../../../../data/DetailProduct.json';
 import { useParams } from 'react-router-dom';
 
