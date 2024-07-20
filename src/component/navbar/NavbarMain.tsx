@@ -282,14 +282,18 @@ export function NavbarWithMegaMenu() {
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="hidden gap-2 lg:flex">
-            <Button placeholder="" variant="text" size="sm" color="blue-gray">
+           <div className="hidden gap-2 lg:flex">
+            {/* <Button placeholder="" variant="text" size="sm" color="blue-gray">
               Log In
             </Button>
             <Button placeholder="" variant="gradient" size="sm">
               Sign In
+            </Button> */}
+            <Button placeholder="" variant="gradient" size="sm">
+              XEM SẢN PHẨM
             </Button>
-          </div>
+          </div> 
+          
           <IconButton
             placeholder=""
             variant="text"
@@ -306,14 +310,14 @@ export function NavbarWithMegaMenu() {
         </div>
         <Collapse open={openNav}>
           <NavList />
-          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+          {/* <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
             <Button placeholder="" variant="outlined" size="sm" color="blue-gray" fullWidth>
               Log In
             </Button>
             <Button placeholder="" variant="gradient" size="sm" fullWidth>
               Sign In
             </Button>
-          </div>
+          </div> */}
         </Collapse>
       </Navbar>
     </div>

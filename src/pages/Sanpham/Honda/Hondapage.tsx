@@ -24,7 +24,6 @@ import cbr150r from '../../../assets/images/xehonda/cbr150r.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import React, { useRef } from 'react';
-
 const Hondapage = () => {
   const xegaRef = useRef(null);
   const xesoRef = useRef(null);
@@ -63,7 +62,7 @@ const Hondapage = () => {
     {
       id: 4,
       name: 'SH 350i',
-      href: '#',
+      href: 'detail-product',
       price: 'Liên hệ',
       imageSrc: sh350i,
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -87,7 +86,7 @@ const Hondapage = () => {
     {
       id: 7,
       name: 'Vision',
-      href: '#',
+      href: 'detail-product',
       price: 'Liên hệ',
       imageSrc: vision,
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -184,6 +183,7 @@ const Hondapage = () => {
               <NavbarWithMegaMenu />
             </div>
             <Carousel
+                  
                   placeholder=""
                   className="rounded-xl -z-50"
                   navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -261,7 +261,7 @@ const Hondapage = () => {
 
                     <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                       {xega.map((product) => (
-                        <a key={product.id} href={product.href} className="group">
+                        <a key={product.id} href={`product.href/${product.id}`} className="group">
                           <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                             <img
                               src={product.imageSrc}

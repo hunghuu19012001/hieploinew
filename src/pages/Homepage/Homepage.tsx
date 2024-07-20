@@ -13,21 +13,14 @@ import exbg from "../../assets/images/xeyamaha/xecontay/cacphienban/exciter/Ex15
 // import bannerbg from "../../assets/images/slide.png"
 // import bannerbg from "../../assets/images/bg-banner.jpg"
 import bannerbg from "../../assets/images/bgbannertest.png"
-import anime from 'animejs/lib/anime.es.js';
-import { useEffect } from 'react';
+
 import './banner.css'
 import Footer from '../../component/Footer/Footer'
 import {NavbarWithMegaMenu}  from '../../component/navbar/NavbarMain'
+// import LogosCarousel from './LogosCarousel'
+
 const Homepage = () => {
-    useEffect(() => {
-        anime({
-            targets: '.ani_image',
-            translateX: 50,
-            loop: true,
-            direction: 'alternate',
-            easing: 'easeInOutSine'
-        });
-    },[]);
+   
   return (
     
         <div className='flex flex-col flex-row'>
@@ -38,7 +31,7 @@ const Homepage = () => {
                 <img  src={banner3} />
             </div>
             <div><Searchbar/></div> */}
-            
+                        
                     <section className="home relative text-white md:h-screen ">
                               <div className="content flex flex-col md:flex-col ">
                                 <div className="left md:w-4/5 md:mx-auto   w-5/6 mx-auto md:p-8 px-4 pt-4  md:mt-40 ">
@@ -95,6 +88,8 @@ const Homepage = () => {
 
                   </section>
                   {/* <div><Choosebanner/></div> */}
+                  {/* <div><LogosCarousel/></div> */}
+
                   <div><CarouselHotDeal/></div>
                   {/* <div><Newproduct/></div> */}
                   <div><Xehonda /></div>

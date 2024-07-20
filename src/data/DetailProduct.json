@@ -1,0 +1,139 @@
+{
+    "bikes": [
+
+        {
+            "id": "7",
+            "name": "Vision",
+            "price": "Liên hệ",
+            "banner": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938975/vision/fkeaYaS5YGfjlEztEYjS_fdp0og.jpg",
+            "avatar": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938999/vision/zvWJZLEXJTLfpqcBqjIq_jxypbp.png",
+            "design": [{
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938969/vision/3ZJP2EtKs2VxtoISRczj_i6mfbo.jpg",
+                    "title": "Kiểu dáng thời trang và đa dạng màu sắc lựa chọn",
+                    "description": "Thân xe nhỏ gọn kế thừa nét thiết kế của dòng xe SH, với những đường nét rõ ràng, liền mạch kết hợp hài hòa với phong cách trẻ trung, thời trang, nay nổi bật và cuốn hút hơn với màu mới lạ trên phiên bản đặc biệt và phiên bản thể thao. Ngoài ra, các họa tiết tinh tế được thể hiện trên nhiều chi tiết thiết kế giúp đem lại hình ảnh thời trang cho mẫu xe mới."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938975/vision/fL07ot4CJbt3Eliq9fQ2_wflfbb.jpg",
+                    "title": "Thiết kế phía trước hiện đại và năng động",
+                    "description": "Thiết kế phía trước kế thừa sự năng động vốn có của Vision cùng hiệu ứng ánh sáng đẹp mắt được tạo nên bởi sự kết hợp giữa đường nét thiết kế ba chiều và hệ thống đèn trước. Tất cả tổng hòa nên một thiết kế trẻ trung, hiện đại, năng động, không kém phần sang trọng. Riêng phiên bản thể thao được thiết kế cụm đèn trước sau với thấu kính màu xám khói, giúp tôn vinh vẻ ngoài độc đáo và thể thao mạnh mẽ."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938974/vision/F3vD1KkTCzVkiPcJ6xns_pow4p8.jpg",
+                    "title": "Logo 3D năng động và ấn tượng",
+                    "description": "Logo 3D nổi trên thân xe với đường nét liền mạch, rõ ràng mang đến hình ảnh trẻ trung và năng động."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938987/vision/OZwGqyrQizHXocCsgS1x_jsi3k3.jpg",
+                    "title": "Thiết kế sau ấn tượng",
+                    "description": "Cụm đèn sau và đèn xi nhan được thiết kế tinh xảo, bố trí liền khối mang lại phong cách trẻ trung, thanh lịch, nhỏ gọn tiện lợi."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938984/vision/NfweVPjeSDcMN4WQuqcI_qinfdk.jpg",
+                    "title": "Mặt đồng hồ hiện đại",
+                    "description": "Thiết kế mặt đồng hồ trẻ trung, thanh lịch nhưng không kém phần hiện đại với màn hình LCD hiển thị số quãng đường và mức nhiên liệu. Đèn hiển thị xi nhan trên mặt đồng hồ được cải tiến với bố trí tách rời hai bên trái và phải giúp người dùng nhanh chóng và dễ dàng quan sát khi chuyển hướng."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938990/vision/pXgXucLjgRv39VjyWmRL_orhfgn.jpg",
+                    "title": "Bánh xe trước 14 inch &amp; 16 inch thiết kế riêng biệt",
+                    "description": "Bánh xe trước có kích thước lớn 16 inch (ở phiên bản thể thao) và 14 inch (ở các phiên bản còn lại), kết hợp với thiết kế liền mạch ở thân xe, đem đến tư thế lái xe cao, thẳng đứng cùng tầm nhìn thoáng rộng."
+                }
+            ],
+            "engineTechnology": [{
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938988/vision/p4baF9BQyRXb0mTcNa8X_fpziuq.jpg",
+                    "title": "Động cơ eSP thông minh thế hệ mới",
+                    "description": "eSP - Động cơ thông minh với thiết kế nhỏ gọn, 110cc, 4 kỳ, xy-lanh đơn, làm mát bằng không khí và tích hợp những công nghệ tiên tiến: hệ thống phun xăng điện tử (PGM-FI),động cơ tích hợp bộ đề ACG, hệ thống ngắt động cơ tạm thời (Idling stop), giảm thiểu ma sát và khả năng đốt cháy hoàn hảo."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938979/vision/idgETKjxCvEccpNM6QfM_c9lagv.jpg",
+                    "title": "Khung dập hàn laser thế hệ mới eSAF",
+                    "description": "Khung dập thế hệ mới do Honda phát triển có trọng lượng nhẹ hơn, độ bền cao, mang lại trải nghiệm lái thoải mái."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938970/vision/akCptKDujyRJ6CYV6IRd_h8mlxe.jpg",
+                    "title": "Hệ thống ngắt động cơ tạm thời",
+                    "description": "Có khả năng tự động ngắt động cơ khi dừng xe trên 3 giây và khởi động lại động cơ chỉ bằng thao tác vặn tay ga, giúp giảm tiếng ồn, tiết kiệm nhiên liệu và bảo vệ môi trường."
+                }
+            ]
+
+            ,
+            "convenienceSafety": [{
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938991/vision/rSQcvM7K4tEUndPRF5fV_qqlton.jpg",
+                    "title": "Hộc đựng đồ phía trước với cổng sạc tiện lợi",
+                    "description": "Hộc đựng đồ phía trước có nắp đậy, kích thước rộng rãi và có khả năng chứa nhiều vật dụng cá nhân. Việc nâng cấp từ cổng sạc ACC sang cổng sạc USB và chuyển vị trí cổng sạc tiện lợi từ hộc đựng đồ dưới yên lên hộc đựng đồ phía trước mang đến sự thoải mái hơn cho người sử dụng, đặc biệt là các bạn trẻ thích di chuyển."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938984/vision/Nn6shPeONg5uewzDdqcS_ycang9.jpg",
+                    "title": "Hộc đựng đồ dưới yên rộng rãi",
+                    "description": "Hộc đựng đồ với dung tích lớn giúp nâng tầm trải nghiệm cho khách hàng."
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938971/vision/CdPgRIIRo2u378s23vDF_mla1ez.jpg",
+                    "title": "Hệ thống khóa thông minh Smart Key",
+                    "description": "Hệ thống khóa thông minh Smart Key giúp xác định vị trí xe và mở khóa thông minh từ xa tiện lợi, đem lại tiện ích cao cấp cho khách hàng. Kết cấu khóa chắc chắn giúp an tâm khi sử dụng. (Áp dụng cho Phiên bản Đặc biệt, Cao cấp và Thể thao)"
+                },
+                {
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938975/vision/fL07ot4CJbt3Eliq9fQ2_wflfbb.jpg",
+                    "title": "Đèn chiếu sáng phía trước luôn sáng",
+                    "description": "Chế độ đèn luôn sáng đảm bảo cho người sử dụng có tầm nhìn tốt nhất, hạn chế các trường hợp quên bật đèn khi đi trong điều kiện ánh sáng không đảm bảo, đồng thời giúp nâng cao khả năng hiện diện của xe khi lưu thông trên đường phố."
+
+                }
+            ],
+            "priceAndColor": [{
+                    "title": "Cao Cấp",
+                    "color": "Trắng Đen",
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938989/vision/PVv5bAR0a69T7Y2GTvQ9_ku7zv1.jpg",
+                    "colorHex": ["#FFFFFF", "#000000"]
+                },
+                {
+                    "title": "Cao Cấp",
+                    "color": "Đỏ Đen",
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938993/vision/sXb0SHuuNZbKLyTqTMIK_f0mr1u.jpg",
+                    "colorHex": ["#FF0000", "#000000"]
+                },
+                {
+                    "title": "Đặc Biệt",
+                    "color": "Xanh Đen",
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938972/vision/cGhWsbF8uTl4O67urnkG_bcbmx0.jpg",
+                    "colorHex": ["#0000FF", "#000000"]
+                },
+                {
+                    "title": "Thể Thao",
+                    "color": "Xám Đen",
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938969/vision/3ZJP2EtKs2VxtoISRczj_i6mfbo.jpg",
+                    "colorHex": ["#808080", "#000000"]
+                },
+                {
+                    "title": "Thể Thao",
+                    "color": "Đen",
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938969/vision/08ECeaW0VDA2G8Yki7KM_auwbny.jpg",
+                    "colorHex": ["#808080", "#000000"]
+                }, {
+                    "title": "Tiêu Chuẩn",
+                    "color": "Đen",
+                    "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938973/vision/eONAHxlVVXs8M4aAdi05_krb22x.jpg",
+                    "colorHex": ["#000000", "#000000"]
+                }
+            ]
+        },
+
+        {
+            "technicalSpecifications": [
+                { "title": "Khối lượng bản thân", "values": ["Phiên bản Tiêu chuẩn: 94 kg", "Phiên bản Cao cấp, Phiên bản Đặc biệt: 95 kg", "Phiên bản Thể thao: 98 kg"] },
+                { "title": "Dài x Rộng x Cao", "values": ["Phiên bản Thể thao: 1.925 mm x 686 mm x 1.126 mm", "Các phiên bản khác: 1.871 mm x 686 mm x 1.101 mm"] },
+                { "title": "Khoảng cách trục bánh xe", "values": ["Phiên bản Thể thao: 1.277 mm", "Các phiên bản khác: 1.255 mm"] },
+                { "title": "Độ cao yên", "values": ["Phiên bản Thể thao: 785 mm", "Các phiên bản khác: 761 mm"] },
+                { "title": "Khoảng sáng gầm xe", "values": ["Phiên bản Thể thao: 130 mm", "Các phiên bản khác: 120 mm"] },
+                { "title": "Dung tích bình xăng", "values": ["4.9 L"] },
+                { "title": "Kích cỡ lốp trước/ sau", "values": ["Phiên bản Thể thao: 80/90-16M/C43P", "90/90-14M/C46P", "Phiên bản khác: 80/90-14M/C40P", "90/90-14M/C46P"] },
+                { "title": "Phuộc trước", "values": ["Ống lồng, giảm chấn thủy lực"] },
+                { "title": "Phuộc sau", "values": ["Lò xo trụ đơn, giảm chấn thủy lực"] },
+                { "title": "Loại động cơ", "values": ["4 kỳ, 1 xi lanh, làm mát bằng không khí"] },
+                { "title": "Công suất tối đa", "values": ["6,59 kW/7.500 rpm"] },
+                { "title": "Dung tích nhớt máy", "values": ["Sau khi xả 0,65 L", "Sau khi rã máy 0,8 L"] },
+                { "title": "Mức tiêu thụ nhiên liệu", "values": ["1,85 l/100km"] }
+            ]
+        }
+
+
+    ]
+}
