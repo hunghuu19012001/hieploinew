@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import Footer from '../../../../component/Footer/Footer'
 import { NavbarWithMegaMenu } from '../../../../component/navbar/NavbarMain'
 import {useParams} from 'react-router-dom';
