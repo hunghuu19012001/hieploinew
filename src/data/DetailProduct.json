@@ -113,10 +113,8 @@
                     "image": "https://res.cloudinary.com/duc3toddq/image/upload/v1712938973/vision/eONAHxlVVXs8M4aAdi05_krb22x.jpg",
                     "colorHex": ["#000000", "#000000"]
                 }
-            ]
-        },
+            ],
 
-        {
             "technicalSpecifications": [
                 { "title": "Khối lượng bản thân", "values": ["Phiên bản Tiêu chuẩn: 94 kg", "Phiên bản Cao cấp, Phiên bản Đặc biệt: 95 kg", "Phiên bản Thể thao: 98 kg"] },
                 { "title": "Dài x Rộng x Cao", "values": ["Phiên bản Thể thao: 1.925 mm x 686 mm x 1.126 mm", "Các phiên bản khác: 1.871 mm x 686 mm x 1.101 mm"] },
@@ -133,6 +131,8 @@
                 { "title": "Mức tiêu thụ nhiên liệu", "values": ["1,85 l/100km"] }
             ]
         }
+
+
 
 
     ]

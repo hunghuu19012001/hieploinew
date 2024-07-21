@@ -27,10 +27,10 @@ const PriceColor = () => {
   return (
     <div className="mt-8">
       {/* <h3 className="text-xl font-bold text-gray-800 mb-4">Bảng giá và màu sắc</h3> */}
-      <div className="flex flex-row justify-between p-4 bg-white rounded-lg shadow-lg">
+      <div className="flex flex-col md:flex-row  justify-between p-4 bg-white rounded-lg shadow-lg">
         <div>
           {Object.keys(groupedColors).map((title) => (
-            <div key={title} className="mb-6 flex flex-col">
+            <div key={title} className="mb-6 flex  md:flex-col">
               <div className="flex flex-col">
                 <h4 className="text-lg font-semibold text-gray-700 mb-4">{title}</h4>
                 <div className="flex flex-wrap gap-8">

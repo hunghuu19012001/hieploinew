@@ -47,7 +47,6 @@ const DetailProduct: React.FC = () => {
     }
 
 
-
   return (
     <div className="min-h-screen bg-gray-50">
       <NavbarWithMegaMenu />
@@ -71,7 +70,7 @@ const DetailProduct: React.FC = () => {
                 {product.design ? (
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             {product.design.map((designItem, designIndex) => (
-                                <div key={designIndex} className="mb-4" onClick={() => handleImageClick(designItem.image, designItem.title, designItem.description)}>
+                                <div key={designIndex} className="mb-4 cursor-pointer" onClick={() => handleImageClick(designItem.image, designItem.title, designItem.description)}>
                                     <img src={designItem.image} alt={designItem.title} className="w-full h-auto object-cover rounded-lg shadow-lg mb-2" />
                                     <p>{designItem.title}</p>
                                 </div>
@@ -91,7 +90,7 @@ const DetailProduct: React.FC = () => {
                 {product.engineTechnology ? (
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             {product.engineTechnology.map((engineTechItem, engineTechIndex) => (
-                                <div key={engineTechIndex} className="mb-4" onClick={() => handleImageClick(engineTechItem.image, engineTechItem.title, engineTechItem.description)}>
+                                <div key={engineTechIndex} className="mb-4 cursor-pointer" onClick={() => handleImageClick(engineTechItem.image, engineTechItem.title, engineTechItem.description)}>
                                     <img src={engineTechItem.image} alt={engineTechItem.title} className="w-full h-auto object-cover rounded-lg shadow-lg mb-2" />
                                     <p>{engineTechItem.title}</p>
                                 </div>
@@ -112,7 +111,7 @@ const DetailProduct: React.FC = () => {
                     {product.convenienceSafety ? (
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             {product.convenienceSafety.map((convSafetyItem, convSafetyIndex) => (
-                                <div key={convSafetyIndex} className="mb-4" onClick={() => handleImageClick(convSafetyItem.image, convSafetyItem.title, convSafetyItem.description)}>
+                                <div key={convSafetyIndex} className="mb-4 cursor-pointer" onClick={() => handleImageClick(convSafetyItem.image, convSafetyItem.title, convSafetyItem.description)}>
                                     <img src={convSafetyItem.image} alt={convSafetyItem.title} className="w-full h-auto object-cover rounded-lg shadow-lg mb-2" />
                                     <p>{convSafetyItem.title}</p>
                                 </div>
@@ -126,13 +125,33 @@ const DetailProduct: React.FC = () => {
             </Accordion>
           </div>
         </div>
+
         <div className="mt-8">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Bảng giá và màu sắc</h3>
           <div className="p-4 bg-white rounded-lg shadow-lg">
             <PriceColor />
           </div>
         </div>
-        
+
+        <div className="mt-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">Thông Số Kỹ Thuật</h3>
+                    {product.technicalSpecifications ? (
+                        <div className="p-4 bg-white rounded-lg shadow-lg">
+                            {product.technicalSpecifications.map((spec, specIndex) => (
+                                <div key={specIndex} className={`mb-4 flex flex-col md:flex-row px-4 ${specIndex % 2 === 0 ? 'bg-gray-100' : 'bg-white'} p-2 rounded-md`} >
+                                    <h4 className="font-bold md:w-1/2">{spec.title}</h4>
+                                    <ul className=" ml-5 md:w-1/2">
+                                        {spec.values.map((value, valueIndex) => (
+                                            <li key={valueIndex}>{value}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <p>Thông tin về thông số kỹ thuật đang được cập nhật.</p>
+                    )}
+          </div>
       </div>
       
       <Footer />
