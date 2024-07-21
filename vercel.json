@@ -4,6 +4,6 @@
         { "src": "/xe-honda", "dest": "/" },
         { "src": "/xe-yamaha", "dest": "/" },
         { "src": "/xe-dien", "dest": "/" },
-        { "src": "xe-honda/product\\.href/(.*)", "dest": "/product-detail?id=$1" }
+        { "src": "product.href/(.*)", "dest": "/" }
     ]
 }
