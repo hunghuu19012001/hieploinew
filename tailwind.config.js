@@ -31,7 +31,22 @@ export default withMT({
             colors: {
                 'button': '#EE0C35'
 
-            }
+            },
+            boxShadow: {
+                'custom-card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)',
+            },
+            borderWidth: {
+                '1': '1px', // Tạo thêm border 1px tùy chỉnh
+            },
+            animation: {
+                'infinite-scroll': 'infinite-scroll 25s linear infinite',
+            },
+            keyframes: {
+                'infinite-scroll': {
+                    from: { transform: 'translateX(0)' },
+                    to: { transform: 'translateX(-100%)' },
+                }
+            },
         },
     },
     plugins: [],

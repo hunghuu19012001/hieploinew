@@ -119,8 +119,8 @@ const Xedienpage = () => {
     ]
   return (
     <div>
-        <div>
-            <div className="">
+        <div className="flex flex-col">
+            <div className="sticky top-0 z-50">
               <NavbarWithMegaMenu />
             </div>
             <Carousel

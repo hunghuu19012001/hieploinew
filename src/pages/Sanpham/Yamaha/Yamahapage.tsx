@@ -105,10 +105,10 @@ const Yamahapage = () => {
         ]
   return (
     <div>
-        <div>
-            <div className="">
-              <NavbarWithMegaMenu />
-            </div>
+        <div className='flex flex-col'>
+						<div className="sticky top-0 z-50"> {/* Sticky Navbar */}
+							<NavbarWithMegaMenu />
+						</div>
             <Carousel
                   placeholder=""
                   className="rounded-xl "
